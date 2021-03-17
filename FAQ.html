@@ -1,0 +1,557 @@
+﻿<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Infigo Eyecare</title>
+<!-- InstanceEndEditable -->
+<meta name="description" content="">  
+<meta name="keywords" content=""> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/infigo-style.css">   
+<link rel="stylesheet" type="text/css" href="/autocomplete/autocomplete.css">
+<script type="text/javascript" src="assets/js/jquery.js"></script>   
+<!--menu css-->
+<link rel="stylesheet" href="assets/css/menu-styles.css">  
+<!--back to top css --> 
+<link rel="stylesheet" href="assets/css/back-to-top.css"> 
+<!--animation css -->
+<link href="assets/css/aos.css" rel="stylesheet" type="text/css">
+<script src="assets/js/aos.js" type="text/javascript"></script>  
+<!--sticky popup css -->
+<link rel="stylesheet" href="assets/css/needpopup.min.css"/>
+<link rel="stylesheet" href="assets/css/sticky-popup.css"/>
+<!-- date picker-->
+<link href="assets/bootstrap/css/datepicker.css" type="text/css" rel="stylesheet">
+<script src="assets/bootstrap/js/bootstrap-datepicker.js" type="text/javascript"></script>
+<script>$(function(){$('.input-group.date').datepicker({calendarWeeks:true,todayHighlight:true,autoclose:true});});</script>
+<!--flaticon-->
+<link href="assets/fonts/flaticon/flaticon.css" rel="stylesheet"/>	
+<!--select file-->
+<script type="text/javascript">
+function getFile() {
+document.getElementById("upfile").click();
+}
+
+function sub(obj) {
+var file = obj.value;
+var fileName = file.split("\\");
+document.getElementById("yourBtn").innerHTML = fileName[fileName.length - 1];
+document.myForm.submit();
+event.preventDefault();
+}
+</script>
+	<!--select treatment script-->
+	<script>
+$(function() {
+        $('#treatmentselector').change(function(){
+            $('.treat').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+</script>
+
+<!--chat script start-->		
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="56bb138a-0fb7-4433-91d6-af11cf15bb33";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<!--chat script end-->
+	<!--google code-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164244284-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164244284-1');
+</script>
+	<!--google code-->
+	
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+
+<div class="hameid-loader-overlay"></div>
+
+<!--header start-->
+
+<!--navigation menu-->
+<section>
+<div class="container">
+<div class="row">
+<div class="col-md-12"> 
+<div class="logo">
+<div class="main-logo">
+<a href="index.html"><img src="assets/img/logo.png" alt="Infigo logo"/></a>
+</div>
+<div class="nav-menu">
+<div id="cssmenu"> 
+<ul>			
+<li><a href="our-centres.html">Our Centres</a>
+<ul>
+<li><a href="centre-Bhayander.html">Bhayander</a></li>
+<li><a href="centre-Boisar.html">Boisar</a></li>
+<li><a href="centre-Borivali.html">Borivali </a></li>
+<li><a href="centre-Dombivali.html">Dombivali</a></li>	
+<li><a href="centre-Mahim.html">Mahim</a></li>
+<li><a href="centre-Palghar.html">Palghar</a></li>
+<li><a href="centre-Sangali.html">Sangli</a></li>
+<li><a href="centre-Seawoods.html">Seawoods</a></li>
+<li><a href="centre-Vashi.html">Vashi</a></li>
+<li><a href="centre-Virar.html">Virar</a></li>
+</ul>	
+</li>	
+<li><a href="our-doctors.html">  Our Doctors  </a></li>	
+<li><a href="#">  Treatments  </a>	
+<ul>
+<li><a href="General-ophthalmology.html">General Ophthalmology</a></li>
+<li><a href="Cataract.html">Cataract</a></li>
+<li><a href="Glaucoma.html">Glaucoma</a></li>
+<li><a href="Squint.html">Squint</a></li>
+<li><a href="Pediatric-Ophthalmology.html">Pediatric Ophthalmology</a></li>	
+<li><a href="Retina-and-Diabetic-Eye-Problems.html">Retina & Diabetic Eye Problems</a></li>
+<li><a href="Oculoplasty.html">Oculoplasty</a></li>
+<li><a href="Corneal-and-external-eye-disease.html">Corneal & External Eye Disease</a></li>
+<li><a href="LASIK.html">Lasik</a></li>
+<li><a href="Computer-vision-syndrome.html">Computer Vision Syndrome</a></li>
+<li><a href="Neuro-Ophthalmology.html">Neuro Ophthalmology</a></li>
+</ul>	
+</li>	
+
+<li><a href="#">   Patient Care     </a>
+
+<ul>
+<li><a href="3D-eye-clinic.html">3D Eye Clinic</a></li>
+<li><a href="corporate-eyecare.html">Corporate Eyecare</a></li>
+<li><a href="EyeGo.html">Eyego</a></li>
+<li><a href="insurance.html">Insurance</a></li>
+<li><a href="international-patients.html">International Patients</a></li>
+<li><a href="second-opinion.html">Second Opinion</a></li>
+</ul>	
+</li>		
+
+<li><a href="#"> Virtual Tour </a>
+<ul>
+<li><a href="https://www.google.co.in/maps/@19.2943638,72.8491764,3a,75y,222.12h,88.27t/data=!3m7!1e1!3m5!1sAF1QipOp6aJSZASKHWpkKu95348um2-nvivw7f5pVIdt!2e10!3e12!7i9400!8i4700" target="_blank">Bhayander </a></li>
+<li><a href="#">Boisar </a></li>
+<li><a href="#">Borivali </a></li>
+<li><a href="#">Dombivali </a></li>
+<li><a href="https://www.google.co.in/maps/@19.0334504,72.8424158,3a,75y,224.12h,97.23t/data=!3m7!1e1!3m5!1sAF1QipM2vrqd8wNbr3dHBH9dZ8D1m9t2YPgCA_QlHKXu!2e10!3e12!7i9400!8i4700" target="_blank">Mahim </a></li>
+<li><a href="https://www.google.co.in/maps/@19.6966614,72.7687086,3a,75y,176.34h,92.5t/data=!3m8!1e1!3m6!1sAF1QipOjqjDHE5rfhs-QebnOXRx1i82swbhKZMQOjfOb!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOjqjDHE5rfhs-QebnOXRx1i82swbhKZMQOjfOb%3Dw203-h100-k-no-pi-0-ya343.87253-ro-0-fo100!7i9400!8i4700" target="_blank">Palghar </a></li>
+<li><a href="#">Sangli </a></li>
+<li><a href="#">Seawoods </a></li>	
+<li><a href="https://www.google.co.in/maps/@19.076251,72.9969141,3a,75y,133.45h,84.52t/data=!3m7!1e1!3m5!1sAF1QipPEws_xJzloKWUkZ87ds9xqwWGuJZzjQgVJ6c7X!2e10!3e12!7i9400!8i4700" target="_blank">Vashi </a></li>
+<li><a href="https://www.google.co.in/maps/@19.4548722,72.8009659,3a,75y,224.63h,104.47t/data=!3m7!1e1!3m5!1sAF1QipOouSaCun_WFNfxZJXbxBlAGblnp5StAiGy2p7k!2e10!3e12!7i9400!8i4700" target="_blank">Virar </a></li>
+</ul> 	 	
+</li>	
+
+<li><a href="#"> About Us   </a>
+<ul>
+<li><a href="company.html">Company</a></li>
+<li><a href="#">Our Team</a></li>
+</ul> 	
+</li>	
+
+<li><a href="cost-at-infigo.html">  Cost at Infigo  </a></li>		
+</ul>
+
+</div>
+</div>
+<div class="call">
+<a href="tel:+919372766491"><img src="assets/img/phone.png" alt="call"></a>
+</div>
+</div>       	      	
+
+</div>
+</div>
+</div>
+</section>
+
+<!--search and bradcrumb start-->    
+<section>
+<div class="container">
+<div class="row">	
+<div class="main-search">
+<div class="in-search-container">
+<form action="#">
+<input type="text" placeholder="Search.." name="searchText" id="searchText">
+<button type="button" id="btnSearch"><i class="fa fa-search"></i></button>
+</form>
+</div>
+</div>	
+</div>
+</div>   
+</section>
+
+<div class="sticky-popup">
+<a href="#" data-needpopup-show="#contact">Contact Us</a>
+
+<div id="contact" class="needpopup1">    
+<div class="sticky-head">    
+<h4>Contact INFIGO</h4>
+</div> 		
+
+<div class="sticky-content">
+<div class="sticky-mid">
+<h3>Call Us</h3>
+<a href="tel:+919372766491">+91 93727 66491</a>
+</div>
+
+<form action="contact-us.php" method="post"> 
+
+<div class="col-md-12">
+<p><label>I need help with <span>*</span> </label> </p>
+<p><input name="help" required type="text"></p>
+</div>  
+
+<div class="col-md-12">
+<p><label>First Name <span>*</span> </label></p>
+<p><input name="fname" required type="text"></p>
+</div>
+
+<div class="col-md-12">
+<p><label>Last Name <span>*</span> </label></p>
+<p><input name="lname" required type="text"></p>
+</div> 
+
+<div class="col-md-12">
+<p><label>Email Id <span>*</span> </label> </p>
+<p><input name="emailid" type="email" required></p>
+</div>    
+
+<div class="col-md-12">
+<p><label>Phone <span>*</span> </label> </p>
+<p><input name="phone" type="text" required pattern="[0-9]{1,15}" maxlength="" title="Enter 1 to 15 digit number"></p>
+</div> 
+	
+<div class="col-md-12">
+<p><label>Message <span>*</span> </label> </p>
+<p><textarea name="message" required></textarea> </p>
+</div> 	
+	
+<div class="col-md-12 caprow">   
+<p><label>Verification Code <span>*</span> </label> </p>
+
+<div class="col-md-6 no-padding">          	
+<div id="imgdiv">
+<img id="img" src="captcha.php" alt="captcha">
+</div>
+</div>
+<div class="col-md-6"> 
+<img id="reload" src="assets/img/reload.png" alt="reload">
+</div>           					
+
+<div class="col-md-12 no-padding">
+<p><input id="txtCompare" name="captcha" type="text" required></p>
+</div> 
+</div>
+	<div class="clearfix"></div>
+<div class="col-md-12">
+<input name="submit" value="Send Message" type="submit">
+</div> 
+	
+<div class="col-md-12">
+<h6 class="abt">Know More About<a href="our-centres.html"> Infigo Centres</a></h6>
+</div>
+	
+</form>
+</div>    
+</div>
+</div>
+<div class="template"><!-- InstanceBeginEditable name="EditRegion1" -->
+<!--content-->
+<section>
+<div class="container">
+<div class="row">
+	<div class="breadcrumb">
+	<h2>FAQ<small>s</small></h2>
+	</div>
+</div>
+</div> 
+</section>
+	
+<section class="gray-bg">
+<div class="container">
+<div class="row">
+<div class="faq">
+	<h5>How often do I need to test my eyes?</h5>
+	<p>Adults who wear glasses or contact lenses and adults who are over 60 years should visit their eye care specialist every year or as suggested by the doctor. If the person doesn’t require any vision correction, then a person between 18 and 60 years should visit the doctor twice a year.</p>
+	
+	<h5>Do I need surgery for Cataract? How would I know that?</h5>
+<p>Yes, you need to undergo surgery for removing the cataract from your eye. You have to consult an eye doctor first. He or she will conduct various tests, review your complete medical history for determining whether you need a vision correction surgery or not. After that, he or she will discuss the various options that are available and what is best for you.</p>
+		
+<h5>What is Myopia or Nearsightedness?</h5>
+<p>Myopia is a visual error in which the distant objects look blurry as the visual image is focused in front of the retina rather than on the retina. This condition normally occurs when the length of the eye is more than the optical length.</p>
+	
+<h5>What is Hyperopia or Farsightedness?</h5>
+<p>This is a condition that results when the visual image is focused behind the retina rather than on the retina. It may be caused due to a small eyeball having a weak focusing power being. This is a condition that is often present from birth. Farsighted people can see distant objects clearly, but near objects are blurred.</p>
+	
+<h5>What is the difference between Hyperopia and Presbyopia?</h5>
+<p>The causes and age of developing both the conditions mark the difference between them. Hyperopia is caused when the eye is shorter than normal while Presbyopia is the normal aging process of the eye. While Hyperopia can happen even in childhood, Presbyopia happens only after the age of 40 years.</p>
+	
+<h5>My eyes are fine, then why do I need to visit the doctor regularly?</h5>
+<p>This is because through regular and thorough examination the doctor can diagnose silent diseases such as glaucoma, diabetic retinopathy, and other eye conditions in its early stage. These conditions do not have any initial symptoms and are impossible to diagnose without a thorough check-up.</p>
+	
+<h5>What is Macular Degeneration?</h5>
+<p>This is a condition where the macula of your eyes breaks down causing a sudden or a gradual loss of central vision. Macular degeneration is of two forms: wet and dry. Patients need to undergo a detailed retinal eye examination to determine whether they have macular degeneration or not.</p>
+	
+<h5>Who are at risk of developing Macular Degeneration?</h5>
+<p>People who are older than 55 years are most likely to suffer from macular degeneration. Apart from that, people with a family history of Age-related Macular Degeneration (AMD) is susceptible to developing this condition. Caucasians are most likely to get AMD compared to African-Americans and Hispanics. Smoking increases the risk of AMD.</p>
+	
+<h5>I have noticed small spots floating in front of my eyes. Is this a cause for concern?</h5>
+<p>Eye floaters are tiny specks and spots that keep floating in your field of vision. These are annoying at times but usually, are harmless. These occur when tiny pieces of the gel-like vitreous of your eyes break loose. However, if you notice flashing spots, then you should immediately consult an eye doctor.</p>
+	
+<h5>What causes dry eyes?</h5>
+<p>The tears in your eyes keep them lubricated and moist. That keeps your eyes comfortable. Dry eyes are caused when your eyes are not producing enough tears.
+You may notice blurred vision, light sensitivity, redness, and itching in your eyes. Any disbalance in your tear-flow system can cause dry eyes. Other causes include the natural aging process, conditions such as rheumatoid arthritis and collagen vascular diseases less blinking or staring at computer screens or any other object for a long time without blinking.</p>
+	
+<h5>How to treat dry eyes?</h5>
+<p>The doctor may give you artificial tears and ointments to keep your eyes lubricated. The doctor may even opt for a procedure called temporary punctal occlusion to treat your condition.</p>
+	
+<h5>How do I know if am a suitable candidate for LASIK?</h5>
+<p>The ideal candidate is over 18 years of age with healthy eyes and stable vision. LASIK treatment can correct a wide range of near-sightedness, farsightedness, and astigmatism.</p>
+	
+<h5>Who can’t have LASIK?</h5>
+<p>There are a number of factors that doctors must evaluate before they can determine who is an eligible candidate for LASIK. Some doctors deem certain pre-existing conditions contraindications to the procedure and will not perform surgery if you possess them. Sometimes, factors exist that preclude a patient from being an ideal candidate for LASIK surgery. In many cases, a surgeon may still be able to safely perform the procedure, given that the patient and physician have adequately discussed the risks and benefits and set realistic expectations for results.</p>
+	
+<h5>What are the results I can expect from LASIK?</h5>
+<p>LASIK improves the uncorrected vision - one's vision without wearing corrective lenses - in most patients who have the procedure. Over 90% of patients with low to moderate myopia will achieve 20/40 vision, which is considered the minimum allowed by most states and provinces to drive without having to wear contacts or glasses. Over half of all patients can expect to achieve 20/20 vision or better. However, there are no guarantees that you will have perfect vision, and patients with high myopia (more than -7D) and high hyperopia (more than +4D) should have a different set of expectations. People who are most satisfied with the results of laser correction possess realistic expectations of what their vision will be like after surgery.</p>
+	
+<h5>How long will it take before I can see well after LASIK?</h5>
+<p>Fast visual recovery characterizes this operation. Most patients achieve good vision the day of surgery and find that their eyes feel fairly normal within a day. However, vision can continue to improve, and best vision can still take two to three months to occur. If necessary, adjustments to the surgery called enhancements can be done. Patients who undergo hyperopic LASIK often need to wait longer to able to see clearly. Typically, they are unable to see with intense clarity for one or two weeks, with the best vision coming in several months postoperatively.</p>
+	
+<h5>Can Glaucoma be prevented?</h5>
+<p>Adopting an active lifestyle (as opposed to a sedentary one) is supposed to reduce the risk of glaucoma to some extent, but no definite data is available on the extent of risk reduction.</p>
+	
+<h5>What are the symptoms of diabetic eye disease?</h5>
+<p>There are often no symptoms in the early stages of diabetic retinopathy. There is no pain and vision may not change until the disease becomes severe. Blurred vision may occur when the macula (the part of the retina that provides sharp, central vision) swells from the leaking fluid. This condition is called macular edema. If new vessels have grown on the surface of the retina, they can bleed into the eye, blocking vision. Even in more advanced cases, the disease may progress a long way without symptoms. This symptomless progression is why regular eye examinations for people with diabetes are so important.</p>
+	
+<h5>Who is most likely to get diabetic Retinopathy?</h5>
+<p>Anyone with diabetes. The longer someone has diabetes, the more likely he or she will get diabetic retinopathy. Between 40-45 percent of those with diagnosed diabetes have some degree of diabetic retinopathy.</p>
+	
+<h5>What are the types of oculoplastic surgery?</h5>
+	<ul>
+<li>Majorly of three types</li>
+<li>Reconstructive</li>
+<li>Eyelid Ptosis Surgery (Droopy Eyelid Surgery)</li>
+<li>Eyelid Ectropion (eyelid turn out)  Eyelid Entropion (eyelid turn in)</li>
+<li>Eyelid Retraction Surgery</li>
+<li>Eyelid Chalazion (Stye)</li>
+<li>Eyelid Skin Cancer Surgery and Eyelid Reconstruction</li>
+<li>Tearing & Lacrimal (Tear Duct) System (DCR surgery)</li>
+<li>Thyroid Eye Disease (Graves’ disease Bulging Eye Surgery Orbital Decompression)</li>
+<li>Orbital Tumour Surgery, Orbital Infection</li>
+<li>Enucleation and Evisceration</li>
+<li>Prosthetic Eye & Socket Surgery</li>
+<li>Facial Paralysis, Eyelid Paralysis & Bell’s Palsy</li>
+<li>Blepharospasm (Eyelid Spasm)</li>
+<li>Aesthetic</li>
+<li>Eyebrow Lift (Forehead Lift)</li>
+<li>Upper Blepharoplasty (Eyelid Lift)</li>
+<li>Lower Blepharoplasty (Lower Eyelid Bags Surgery, Dark Circles)</li>
+<li>Asian Blepharoplasty (and Eyelid Crease Surgery)</li>
+<li>Cosmetic Eyelid Ptosis Surgery</li>
+<li>Revisional Eyelid Ptosis (droopy eyelid) Surgery</li>
+<li>Revisional Eyelid Surgery</li>
+<li>Midface Lift (Cheek Lift) and Cheek Augmentation</li>
+<li>Eyelid and Facial Fat Transfer / Fat Graft / Fat Injection</li>
+<li>Cosmetic Orbital Decompression Surgery (for bulgy eyes)</li>
+<li>Fillers</li>
+<li>Filler Injection (Eyelid and Face) — Dark Circles, Sunken Eyes</li>
+<li>Botox, Dysport, Xeomin (for crow’s feet, frown lines)</li>
+<li>Sclerotherapy (Eyelid Vein Removal)</li>
+</ul>
+	</div>
+
+
+</div>
+</div>   
+	</section> 
+<!-- InstanceEndEditable -->
+
+</div>
+
+<!--contact-->
+<section class="margin-top">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 no-padding footer-contact">
+<div class="col-md-4 phone">
+<h6>Call INFIGO</h6>
+<a href="tel:+919372766491">+91 93727 66491</a>
+<h6>Available 24x7</h6>
+</div>
+
+<div class="col-md-4 newsletter">
+<h6>Subscribe to our Newsletter</h6>
+<a href="#" data-needpopup-show="#small-popup">SIGN UP NOW</a>
+<div id="small-popup" class="needpopup">    
+
+<div class="pop-head">
+<h4>Subscribe to our Newsletter</h4>
+<p>To get regular updates about our products and services</p>
+</div>    
+
+<div class="pop-content">
+<form action="newsletter.php" method="post"> 
+<div class="form-group has-feedback">
+
+<div class="col-md-12">
+<label>Name<span>*</span> </label> 
+<input class="from-text" name="fromname" required type="text">
+</div>  
+
+<div class="col-md-12">
+<label>Email Id<span>*</span> </label> 
+<input class="from-text" name="fromemail" type="email" required>
+</div>  
+	
+<div class="col-md-12">   
+<p><label>Verification Code <span>*</span> </label> </p>       	
+<div id="imgdiv4">
+<img id="img4" src="captcha.php" alt="captcha">
+<img id="reload4" src="assets/img/reload.png" alt="reload">	
+</div>
+	
+<div class="col-md-12 no-padding">
+<p><input id="txtCompare" class="from-text" name="captcha" type="text" required></p>
+</div> 
+</div>	
+	
+<div class="col-md-12">
+<div class="pop-check">
+<form action="#"> <label class="cb-con">I agree with the <a href="#" target="_blank">Privacy Policy</a>
+<input type="checkbox">
+<span class="checkmark"></span>
+</label>
+</form> 
+<input class="subscribe" name="submit" value="Subscribe" type="submit">	
+</div>
+</div>
+</div>
+</form>
+	
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 map">
+<h6>Map and Directions</h6>
+<a href="our-centres.html">get directions</a>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!--footer-->
+<footer class="site-footer margin-top">
+<div class="container">
+<div class="row">
+<div class="col-md-12 no-padding">
+<div class="col-md-8">
+<div class="footer-link1">
+<ul>
+<li><a href="FAQ.html">FAQs</a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="disclaimer.html">Disclaimer</a></li>
+<li><a href="press-room.html">Press Room</a></li>
+<li><a href="testimonials.html">Testimonials </a></li>
+</ul>
+</div>
+<div class="footer-link2">
+<ul>
+<li><a href="company.html">About Us</a></li>
+<li><a href="#">Newsletter</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="accreditations.html">Accreditations</a></li>
+<li><a href="#">Recognition and Awards</a></li>
+</ul>
+</div>
+
+</div>
+<div class="col-md-4">
+<ul class="social-links">
+<li><a href="https://instagram.com/infigoeyecare/" target="_blank"><i class="flaticon-instagram"></i></a></li>
+<li><a href="https://business.facebook.com/Infigo-Eyecare-113878843336629/?modal=admin_todo_tour" target="_blank"><i class="flaticon-facebook"></i></a></li>
+<li><a href="https://twitter.com/InfigoE" target="_blank"><i class="flaticon-twitter"></i></a></li>
+<li><a href="#"><i class="flaticon-whatsapp"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UCy4k9GJ9jZuYVsDL0gQIZaw" target="_blank"><i class="flaticon-logo"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="copyrights">
+<div class="copy-l">
+<p>Copyright 2019 Infigo Lifesciences Pvt Ltd</p>
+</div>
+<div class="copy-r">
+<p>Designed by <a href="https://www.galagali.com/" target="_blank">Galagali Multimedia</a></p>
+</div>
+</div>
+</div>
+</footer>	   
+
+<a href="#0" class="cd-top">Top</a>
+
+<!--footer links-->
+<script>
+jQuery(window).load(function(){
+jQuery(".hameid-loader-overlay").fadeOut(1000);
+});
+</script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!--menu js-->
+<script src="assets/js/menu-script.js"></script>	
+<!--back to top js start-->
+<script src="assets/js/modernizr.js"></script> 
+<script src="assets/js/back-to-main.js"></script> 
+<script>
+AOS.init({
+easing: 'ease-in-out-sine'
+});
+</script>
+<!--sticky popup js start-->
+<script src="assets/js/needpopup.min.js" type="text/javascript"></script>
+<script>  
+needPopup.config.custom = {
+'removerPlace': 'outside',
+'closeOnOutside': false,
+onShow: function() {
+console.log('needPopup is shown');
+},
+onHide: function() {
+console.log('needPopup is hidden');
+}
+};
+needPopup.init();
+</script>
+<!--file drag-->	
+<script src="assets/js/filedrag.js"></script>
+<!--captcha script-->
+<script src="assets/js/captcha-script.js" type="text/javascript"></script>
+<script type="text/javascript" src="/autocomplete/autocomplete.js"></script>
+	<!--file drag-->	
+	<script>
+var dropContainer =  document.getElementById('filedrag');
+    dropContainer.ondragover = dropContainer.ondragenter = function(evt) {
+      evt.preventDefault();
+      console.log('dragover');
+    };
+
+dropContainer.ondrop = function(evt) {
+  // pretty simple -- but not for IE :(
+  var fileInput = document.getElementById('upfile');
+  fileInput.files = evt.dataTransfer.files;
+  evt.preventDefault();
+   console.log('dropover');
+};
+</script>
+</body>
+<!-- InstanceEnd --></html>

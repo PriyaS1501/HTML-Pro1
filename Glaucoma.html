@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Infigo Eyecare</title>
+<!-- InstanceEndEditable -->
+<meta name="description" content="">  
+<meta name="keywords" content=""> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/infigo-style.css">   
+<link rel="stylesheet" type="text/css" href="/autocomplete/autocomplete.css">
+<script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ErLQgSqmlOPdK38q_QN5DPIx1ZR2GTqguLqBzxry2Ai15PUmTOvKmcqevBIxvRwzlpawn5M_8VZpHkyaPnhPVkrGO3U_a7uVDBfU3YGM5RwSAKEkDDD-oeJuGrmAgYES3Cs7lhyre1D5UP2zDX86-mnFteb5xSF9_EA0U-VTojerSriasAEm3wTfQslHy3_u" charset="UTF-8"></script><script type="text/javascript" src="assets/js/jquery.js"></script>   
+<!--menu css-->
+<link rel="stylesheet" href="assets/css/menu-styles.css">  
+<!--back to top css --> 
+<link rel="stylesheet" href="assets/css/back-to-top.css"> 
+<!--animation css -->
+<link href="assets/css/aos.css" rel="stylesheet" type="text/css">
+<script src="assets/js/aos.js" type="text/javascript"></script>  
+<!--sticky popup css -->
+<link rel="stylesheet" href="assets/css/needpopup.min.css"/>
+<link rel="stylesheet" href="assets/css/sticky-popup.css"/>
+<!-- date picker-->
+<link href="assets/bootstrap/css/datepicker.css" type="text/css" rel="stylesheet">
+<script src="assets/bootstrap/js/bootstrap-datepicker.js" type="text/javascript"></script>
+<script>$(function(){$('.input-group.date').datepicker({calendarWeeks:true,todayHighlight:true,autoclose:true});});</script>
+<!--flaticon-->
+<link href="assets/fonts/flaticon/flaticon.css" rel="stylesheet"/>	
+<!--select file-->
+<script type="text/javascript">
+function getFile() {
+document.getElementById("upfile").click();
+}
+
+function sub(obj) {
+var file = obj.value;
+var fileName = file.split("\\");
+document.getElementById("yourBtn").innerHTML = fileName[fileName.length - 1];
+document.myForm.submit();
+event.preventDefault();
+}
+</script>
+	<!--select treatment script-->
+	<script>
+$(function() {
+        $('#treatmentselector').change(function(){
+            $('.treat').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+</script>
+
+<!--chat script start-->		
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="56bb138a-0fb7-4433-91d6-af11cf15bb33";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<!--chat script end-->
+	<!--google code-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164244284-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164244284-1');
+</script>
+	<!--google code-->
+	
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+
+<div class="hameid-loader-overlay"></div>
+
+<!--header start-->
+
+<!--navigation menu-->
+<section>
+<div class="container">
+<div class="row">
+<div class="col-md-12"> 
+<div class="logo">
+<div class="main-logo">
+<a href="index.html"><img src="assets/img/logo.png" alt="Infigo logo"/></a>
+</div>
+<div class="nav-menu">
+<div id="cssmenu"> 
+<ul>			
+<li><a href="our-centres.html">Our Centres</a>
+<ul>
+<li><a href="centre-Bhayander.html">Bhayander</a></li>
+<li><a href="centre-Boisar.html">Boisar</a></li>
+<li><a href="centre-Borivali.html">Borivali </a></li>
+<li><a href="centre-Dombivali.html">Dombivali</a></li>	
+<li><a href="centre-Mahim.html">Mahim</a></li>
+<li><a href="centre-Palghar.html">Palghar</a></li>
+<li><a href="centre-Sangali.html">Sangli</a></li>
+<li><a href="centre-Seawoods.html">Seawoods</a></li>
+<li><a href="centre-Vashi.html">Vashi</a></li>
+<li><a href="centre-Virar.html">Virar</a></li>
+</ul>	
+</li>	
+<li><a href="our-doctors.html">  Our Doctors  </a></li>	
+<li><a href="#">  Treatments  </a>	
+<ul>
+<li><a href="General-ophthalmology.html">General Ophthalmology</a></li>
+<li><a href="Cataract.html">Cataract</a></li>
+<li><a href="Glaucoma.html">Glaucoma</a></li>
+<li><a href="Squint.html">Squint</a></li>
+<li><a href="Pediatric-Ophthalmology.html">Pediatric Ophthalmology</a></li>	
+<li><a href="Retina-and-Diabetic-Eye-Problems.html">Retina & Diabetic Eye Problems</a></li>
+<li><a href="Oculoplasty.html">Oculoplasty</a></li>
+<li><a href="Corneal-and-external-eye-disease.html">Corneal & External Eye Disease</a></li>
+<li><a href="LASIK.html">Lasik</a></li>
+<li><a href="Computer-vision-syndrome.html">Computer Vision Syndrome</a></li>
+<li><a href="Neuro-Ophthalmology.html">Neuro Ophthalmology</a></li>
+</ul>	
+</li>	
+
+<li><a href="#">   Patient Care     </a>
+
+<ul>
+<li><a href="3D-eye-clinic.html">3D Eye Clinic</a></li>
+<li><a href="corporate-eyecare.html">Corporate Eyecare</a></li>
+<li><a href="EyeGo.html">Eyego</a></li>
+<li><a href="insurance.html">Insurance</a></li>
+<li><a href="international-patients.html">International Patients</a></li>
+<li><a href="second-opinion.html">Second Opinion</a></li>
+</ul>	
+</li>		
+
+<li><a href="#"> Virtual Tour </a>
+<ul>
+<li><a href="https://www.google.co.in/maps/@19.2943638,72.8491764,3a,75y,222.12h,88.27t/data=!3m7!1e1!3m5!1sAF1QipOp6aJSZASKHWpkKu95348um2-nvivw7f5pVIdt!2e10!3e12!7i9400!8i4700" target="_blank">Bhayander </a></li>
+<li><a href="#">Boisar </a></li>
+<li><a href="#">Borivali </a></li>
+<li><a href="#">Dombivali </a></li>
+<li><a href="https://www.google.co.in/maps/@19.0334504,72.8424158,3a,75y,224.12h,97.23t/data=!3m7!1e1!3m5!1sAF1QipM2vrqd8wNbr3dHBH9dZ8D1m9t2YPgCA_QlHKXu!2e10!3e12!7i9400!8i4700" target="_blank">Mahim </a></li>
+<li><a href="https://www.google.co.in/maps/@19.6966614,72.7687086,3a,75y,176.34h,92.5t/data=!3m8!1e1!3m6!1sAF1QipOjqjDHE5rfhs-QebnOXRx1i82swbhKZMQOjfOb!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOjqjDHE5rfhs-QebnOXRx1i82swbhKZMQOjfOb%3Dw203-h100-k-no-pi-0-ya343.87253-ro-0-fo100!7i9400!8i4700" target="_blank">Palghar </a></li>
+<li><a href="#">Sangli </a></li>
+<li><a href="#">Seawoods </a></li>	
+<li><a href="https://www.google.co.in/maps/@19.076251,72.9969141,3a,75y,133.45h,84.52t/data=!3m7!1e1!3m5!1sAF1QipPEws_xJzloKWUkZ87ds9xqwWGuJZzjQgVJ6c7X!2e10!3e12!7i9400!8i4700" target="_blank">Vashi </a></li>
+<li><a href="https://www.google.co.in/maps/@19.4548722,72.8009659,3a,75y,224.63h,104.47t/data=!3m7!1e1!3m5!1sAF1QipOouSaCun_WFNfxZJXbxBlAGblnp5StAiGy2p7k!2e10!3e12!7i9400!8i4700" target="_blank">Virar </a></li>
+</ul> 	 	
+</li>	
+
+<li><a href="#"> About Us   </a>
+<ul>
+<li><a href="company.html">Company</a></li>
+<li><a href="#">Our Team</a></li>
+</ul> 	
+</li>	
+
+<li><a href="cost-at-infigo.html">  Cost at Infigo  </a></li>		
+</ul>
+
+</div>
+</div>
+<div class="call">
+<a href="tel:+919372766491"><img src="assets/img/phone.png" alt="call"></a>
+</div>
+</div>       	      	
+
+</div>
+</div>
+</div>
+</section>
+
+<!--search and bradcrumb start-->    
+<section>
+<div class="container">
+<div class="row">	
+<div class="main-search">
+<div class="in-search-container">
+<form action="#">
+<input type="text" placeholder="Search.." name="searchText" id="searchText">
+<button type="button" id="btnSearch"><i class="fa fa-search"></i></button>
+</form>
+</div>
+</div>	
+</div>
+</div>   
+</section>
+
+<div class="sticky-popup">
+<a href="#" data-needpopup-show="#contact">Contact Us</a>
+
+<div id="contact" class="needpopup1">    
+<div class="sticky-head">    
+<h4>Contact INFIGO</h4>
+</div> 		
+
+<div class="sticky-content">
+<div class="sticky-mid">
+<h3>Call Us</h3>
+<a href="tel:+919372766491">+91 93727 66491</a>
+</div>
+
+<form action="contact-us.php" method="post"> 
+
+<div class="col-md-12">
+<p><label>I need help with <span>*</span> </label> </p>
+<p><input name="help" required type="text"></p>
+</div>  
+
+<div class="col-md-12">
+<p><label>First Name <span>*</span> </label></p>
+<p><input name="fname" required type="text"></p>
+</div>
+
+<div class="col-md-12">
+<p><label>Last Name <span>*</span> </label></p>
+<p><input name="lname" required type="text"></p>
+</div> 
+
+<div class="col-md-12">
+<p><label>Email Id <span>*</span> </label> </p>
+<p><input name="emailid" type="email" required></p>
+</div>    
+
+<div class="col-md-12">
+<p><label>Phone <span>*</span> </label> </p>
+<p><input name="phone" type="text" required pattern="[0-9]{1,15}" maxlength="" title="Enter 1 to 15 digit number"></p>
+</div> 
+	
+<div class="col-md-12">
+<p><label>Message <span>*</span> </label> </p>
+<p><textarea name="message" required></textarea> </p>
+</div> 	
+	
+<div class="col-md-12 caprow">   
+<p><label>Verification Code <span>*</span> </label> </p>
+
+<div class="col-md-6 no-padding">          	
+<div id="imgdiv">
+<img id="img" src="captcha.php" alt="captcha">
+</div>
+</div>
+<div class="col-md-6"> 
+<img id="reload" src="assets/img/reload.png" alt="reload">
+</div>           					
+
+<div class="col-md-12 no-padding">
+<p><input id="txtCompare" name="captcha" type="text" required></p>
+</div> 
+</div>
+	<div class="clearfix"></div>
+<div class="col-md-12">
+<input name="submit" value="Send Message" type="submit">
+</div> 
+	
+<div class="col-md-12">
+<h6 class="abt">Know More About<a href="our-centres.html"> Infigo Centres</a></h6>
+</div>
+	
+</form>
+</div>    
+</div>
+</div>
+<div class="template"><!-- InstanceBeginEditable name="EditRegion1" -->
+<!--content-->
+<section>
+<div class="container">
+<div class="row">
+<div class="breadcrumb1">
+<h2>Glaucoma</h2>
+</div>
+</div>
+</div> 
+</section>
+
+<section>
+<div class="container">
+<div class="row">
+
+<div class="col-md-12">
+<p>Glaucoma is a disease that damages your eye’s optic nerve. It usually happens when fluid builds up in the front part of your eye. That extra fluid increases the pressure in your eye, damaging the optic nerve. Glaucoma is a leading cause of blindness for people over 60 years old. But blindness from glaucoma can often be prevented with early treatment.</p>
+</div>
+	
+<div class="col-md-12 Glaucoma">	
+	<img src="assets/img/Glaucoma-main.jpg" alt="Glaucoma"/>
+<p>In a healthy eye, excess fluid leaves the eye through the drainage angle, keeping pressure stable.</p>
+
+</div>
+	
+</div>	
+</div>   
+</section> 
+
+
+<section class="gray-bg margin-top row-padding" >
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3 class="sec-heading5">Types of Glaucoma</h3>
+<p>There are two major types of Glaucoma.</p>
+
+<h3 class="sub-title">Primary Open-Angle Glaucoma</h3>
+<p>This is the most common type of glaucoma. It happens gradually; where the eye does not drain fluid as well as it should (like a clogged drain). As a result, eye pressure builds and starts to damage the optic nerve. This type of glaucoma is painless and causes no vision changes at first.</p>
+<p>Some people can have optic nerves that are sensitive to normal eye pressure. This means their risk of getting glaucoma is higher than normal. Regular eye exams are important to find early signs of damage to their optic nerve.</p>
+
+<h3 class="sub-title">Angle-Closure Glaucoma (also called “Closed-Angle Glaucoma” or “Narrow-Angle Glaucoma”)</h3>
+<p>This type happens when someone’s iris is very close to the drainage angle in their eye. The iris can end up blocking the drainage angle. You can think of it like a piece of paper sliding over a sink drain. When the drainage angle gets completely blocked, eye pressure rises very quickly. This is called an acute attack. It is a true eye emergency, and you should call your ophthalmologist right away or you might go blind.</p>
+
+<p>Here are the signs of an acute angle-closure glaucoma attack:</p>
+
+<ul>
+<li>Your vision is suddenly blurry</li>
+<li>You have severe eye pain</li>
+<li>You have a headache</li>
+<li>You feel sick to your stomach (nausea)</li>
+<li>You throw up (vomit)</li>
+<li>You see rainbow-colored rings or halos around lights</li>
+</ul>
+
+<p>Many people with angle-closure glaucoma develop it slowly. This is called chronic angle-closure glaucoma. There are no symptoms at first, so they don’t know they have it until the damage is severe or they have an attack.</p>
+
+<p>Angle-closure glaucoma can cause blindness if not treated right away.</p>
+
+
+</div>
+</div>
+</div>   
+</section> 
+
+
+<section class="margin-top" >
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3 class="sec-heading5">Symptoms of Glaucoma</h3>
+
+<h3 class="sub-title">Open-Angle Glaucoma</h3>
+
+<p>With open-angle glaucoma, there are no warning signs or obvious symptoms in the early stages. As the disease progresses, blind spots develop in your peripheral (side) vision.</p>
+<p>Most people with open-angle glaucoma do not notice any change in their vision until the damage is quite severe. This is why glaucoma is called the “silent thief of sight.” Having regular eye exams can help your ophthalmologist find this disease before you lose vision. Your ophthalmologist can tell you how often you should be examined.</p>
+
+<h3 class="sub-title">Angle-Closure Glaucoma</h3>
+
+<p>People at risk for angle-closure glaucoma usually show no symptoms before an attack. Some early symptoms of an attack may include blurred vision, halos, mild headaches or eye pain. People with these symptoms should be checked by their ophthalmologist as soon as possible. An attack of angle-closure glaucoma includes the following:</p>
+
+<ul>
+<li>Severe pain in the eye or forehead</li>
+<li>Redness of the eye</li>
+<li>Decreased vision or blurred vision</li>
+<li>Seeing rainbows or halos</li>
+<li>Headache</li>
+<li>Nausea</li>
+<li>Vomiting</li>
+</ul>
+
+<h3 class="sub-title">Normal-Tension Glaucoma</h3>
+<p>People with "normal-tension glaucoma" have eye pressure that is within normal ranges but shows signs of glaucoma, such as blind spots in their field of vision and optic nerve damage.</p>
+
+</div>
+</div>
+</div>   
+</section> 
+
+<section class="margin-top row-padding gray-bg">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3 class="sec-heading5">Glaucoma suspects</h3>
+<p>Some people have no signs of damage but have higher than normal eye pressure (called ocular hypertension). These patients are considered "glaucoma suspects" and have a higher risk of eventually developing glaucoma. Some people are considered glaucoma suspects even if their eye pressure is normal. For instance, their ophthalmologists may notice something different about their optic nerve. Anyone who is considered a glaucoma suspect should be carefully monitored by their ophthalmologist. An ophthalmologist can check for any changes over time and begin treatment if needed.</p>
+</div>
+</div>
+</div>   
+</section> 	
+
+<section class="margin-top" >
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3 class="sec-heading5">Causes</h3>
+<p>Your eye constantly makes aqueous humor. As new aqueous flows into your eye, the same amount should drain out. The fluid drains out through an area called the drainage angle. This process keeps pressure in the eye (called intraocular pressure or IOP) stable. But if the drainage angle is not working properly, fluid builds up. The pressure inside the eye rises, damaging the optic nerve.</p>
+
+
+<p>The optic nerve is made of more than a million tiny nerve fibers. It is like an electric cable made up of many small wires. As these nerve fibers die, you will develop blind spots in your vision. You may not notice these blind spots until most of your optic nerve fibers have died. If all of the fibers die, you will become blind.</p>
+</div>
+</div>
+</div>   
+</section> 	
+
+<section class="margin-top row-padding gray-bg">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3 class="sec-heading5">Who is at risk?</h3>
+<p>Some people have a higher than normal risk of getting glaucoma. This includes people who:</p>
+
+<ul>
+<li>Are over age 40</li>
+<li>Have family members with glaucoma</li>
+<li>Are of African, Hispanic, or Asian heritage</li>
+<li>Have high eye pressure</li>
+<li>Are farsighted or nearsighted</li>
+<li>Have had an eye injury</li>
+<li>Use long-term steroid medications</li>
+<li>Have corneas that are thin in the center</li>
+<li>Have thinning of the optic nerve</li>
+<li>Have diabetes, migraines, high blood pressure, poor blood circulation or other health problems affecting the whole body</li>
+</ul>
+
+<p>Talk with an ophthalmologist about your risk of getting glaucoma. People with more than one of these risk factors have an even higher risk of glaucoma.</p>
+</div>
+</div>
+</div>   
+</section> 
+
+<section class="margin-top" >
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3 class="sec-heading5">Diagnosis</h3>
+<p>The only sure way to diagnose glaucoma is with a complete eye exam. A glaucoma screening that only checks eye pressure is not enough to find glaucoma.</p>
+
+
+<p>During a glaucoma exam, your ophthalmologist will:</p>
+
+<ul>
+<li>Measure your eye pressure</li>
+<li>Inspect your eye's drainage angle</li>
+<li>Examine your optic nerve for damage</li>
+<li>Test your peripheral (side) vision</li>
+<li>Take a picture or computer measurement of your optic nerve</li>
+<li>Measure the thickness of your cornea</li>
+</ul>
+</div>
+</div>
+</div>   
+</section>
+
+<section class="margin-top row-padding gray-bg">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3 class="sec-heading5">Treatment</h3>
+<p>Glaucoma damage is permanent—it cannot be reversed. But medicine and surgery help to stop further damage. To treat glaucoma, your ophthalmologist may use one or more of the following treatments.</p>
+
+<p><b>Medication</b></p>
+
+<p>Glaucoma is usually controlled with eye drop medicine. Used every day, these eye drops lower eye pressure. Some do this by reducing the amount of aqueous fluid the eye makes. Others reduce pressure by helping fluid flow better through the drainage angle.</p>
+
+<p>Glaucoma medications can help you keep your vision, but they may also produce side effects. Some eye drops may cause:</p>
+
+<ul>
+<li>A stinging or itching sensation</li>
+<li>Red eyes or red skin around the eyes</li>
+<li>Changes in your pulse and heartbeat</li>
+<li>Changes in your energy level</li>
+<li>Changes in breathing (especially if you have asthma or breathing problems)</li>
+<li>Dry mouth</li>
+<li>Blurred vision</li>
+<li>Eyelash growth</li>
+<li>Changes in your eye color, the skin around your eyes or eyelid appearance.</li>
+</ul>
+<p>All medications can have side effects. Some drugs can cause problems when taken with other medications. It is important to give your doctor a list of every medicine you take regularly. Be sure to talk with your ophthalmologist if you think you may have side effects from glaucoma medicine.</p>
+
+<p>Never change or stop taking your glaucoma medications without talking to your ophthalmologist. If you are about to run out of your medication, ask your ophthalmologist if you should have your prescription refilled.</p>
+
+
+
+
+</div>	
+<div class="col-md-12">
+<div class="trabeculectomy">
+	<img src="assets/img/Glaucoma-main.jpg" alt="glaucoma"/>
+	<h3 class="sec-heading5">Laser surgery</h3>
+<p>	In trabeculectomy, a flap is first created in the sclera (the white part of the eye). Then a small opening is made into the eye to release fluid from the eye.
+There are two main types of laser surgery to treat glaucoma. They help aqueous drain from the eye. These procedures are usually done in the ophthalmologist’s office or an outpatient surgery center.</p>
+
+
+</div>
+</div>
+<div class="col-md-12">
+<ul>
+<li><b>Trabeculoplasty </b>This surgery is for people who have open-angle glaucoma. The eye surgeon uses a laser to make the drainage angle work better. That way fluid flows out properly and eye pressure is reduced.</li>
+
+<li><b>Iridotomy</b> This is for people who have angle-closure glaucoma. The ophthalmologist uses a laser to create a tiny hole in the iris. This hole helps fluid flow to the drainage angle.</li>
+</ul>
+</div>
+
+</div>
+</div>   
+</section>
+
+<section class="margin-top" >
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3 class="sec-heading5">Operating room surgery</h3>
+
+<div class="surgery">
+<img src="assets/img/Operating-room-surgery.jpg" alt="operating room surgery"/>
+<p><!--The only sure way to diagnose is with a complete eye exam. A  glaucoma screening that only checks eye pressure is not enough to fing glaucoma.--> Some glaucoma surgery is done in an operating room. It creates a new drainage channel for the aqueous humor to leave the eye.</p>
+</div>
+
+
+</div>
+
+<div class="col-md-12">
+<ul>
+<li><b>Trabeculectomy</b>. This is where your eye surgeon creates a tiny flap in the sclera (white of your eye). He or she will also create a bubble (like a pocket) in the conjunctiva called a filtration bleb. It is usually hidden under the upper eyelid and cannot be seen. Aqueous humor will be able to drain out of the eye through the flap and into the bleb. In the bleb, the fluid is absorbed by the tissue around your eye, lowering eye pressure.</li>
+
+<li><b>Glaucoma drainage devices</b>. Your ophthalmologist may implant a tiny drainage tube in your eye. It sends the fluid to a collection area (called a reservoir). Your eye surgeon creates this reservoir beneath the conjunctiva (the thin membrane that covers the inside of your eyelids and white part of your eye). The fluid is then absorbed into nearby blood vessels.</li>
+</ul>
+
+</div>
+</div>
+</div>   
+</section>
+
+<section class="margin-top row-padding gray-bg">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3 class="sec-heading5">Your role in Glaucoma treatment</h3>
+
+<p>Treating glaucoma successfully is a team effort between you and your doctor. Your ophthalmologist will prescribe your glaucoma treatment. It is up to you to follow your doctor’s instructions and use your eye drops.</p>
+
+<p>Once you are taking medications for glaucoma, your ophthalmologist will want to see you regularly. You can expect to visit your ophthalmologist about every 3–6 months. However, this can vary depending on your treatment needs.</p>
+
+<p>If you have any questions about your eyes or your treatment, talk to your ophthalmologist.</p>
+
+</div>	
+
+
+
+</div>
+</div>   
+</section>
+
+<!--<section class="gray-bg margin-top row-padding" >
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+
+<div class="col-md-3">
+<h5 class="sp-head">Our Specialists</h5>
+</div>
+
+<div class="col-md-3 specialist">
+<h4>Dr. Divya Varghese</h4>
+<div class="abt-sp">
+<p>M.B.B.S. JJMMC, Davangere</p>
+<p>D.O. JNMC, Belgaum</p>
+<p>D.N.B. Ophthalmology NSEH, Bangalore</p>
+
+</div>
+<h5>Clinical OPD Days/Time</h5>
+<h5>Mon,Tue, Thu, Fri - 9 To 11 am</h5>		
+<ul>
+<li><a href="#" data-toggle="modal" data-target="#divya">View Profile</a></li>
+<li><a href="book-an-appointment.html">Get Appointment</a></li>
+	<!--dr divya profile popup-->
+<div class="modal fade" id="divya" role="dialog">
+<div class="modal-dialog">   
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title">Dr. Divya Grace Varghese</h4>
+</div>
+
+<div class="modal-mid">
+<h5>Experience - 5 Years</h5>
+<h5>M.B.B.S. JJMMC, Davangere</h5>
+<h5>D.O. JNMC, Belgaum</h5>
+<h5>D.N.B. Ophthalmology NSEH, Bangalore</h5>
+
+</div>
+
+<div class="modal-body">
+<ul>
+<li>Fellowship in Glaucoma from NSEH Bangalore.</li>
+<li> Member of AIOS, KOS, BOS, Glaucoma Society of India.</li>
+<li>Dr. Divya Grace Varghese has a specialty practice in Glaucoma surgery. She manages and treats Glaucoma and is an Anterior Segment Surgeon. In addition to Community Ophthalmology, she has hands-on experience in treating complicated cases of Glaucoma and has special skills in laser treatments for managing Glaucoma.</li>
+<li> Has practiced as an Ophthalmologist since 2014 and has more than 3 years of practice as a Specialty Glaucoma Surgeon.</li>
+<li> She has performed more than 500 SICS, and during her specialty practice has intensive experience in dealing with more than 100 Glaucoma Laser therapies and other associated minor and major surgeries of the Anterior Segment</li>
+<li> Her specific interests lie in diagnosing, operating and managing Adult Glaucoma and Laser therapies in Glaucoma</li>
+<li> Dr. Divya Grace Varghese has participated in various Ophthalmology Conferences and presented Posters and Academic papers. She has research on Normal-tension Glaucoma, Neovascular Glaucoma, and ICL Implantation.</li>
+</ul>
+</div>
+
+<div class="modal-footer">
+<h6>Clinical OPD timings : 10 am To 8 pm</h6>
+</div>
+
+</div>
+</div>
+</div>
+</ul>
+</div>
+
+
+</div>
+</div>
+</div>   
+</section>-->
+<!-- InstanceEndEditable -->
+
+</div>
+
+<!--contact-->
+<section class="margin-top">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 no-padding footer-contact">
+<div class="col-md-4 phone">
+<h6>Call INFIGO</h6>
+<a href="tel:+919372766491">+91 93727 66491</a>
+<h6>Available 24x7</h6>
+</div>
+
+<div class="col-md-4 newsletter">
+<h6>Subscribe to our Newsletter</h6>
+<a href="#" data-needpopup-show="#small-popup">SIGN UP NOW</a>
+<div id="small-popup" class="needpopup">    
+
+<div class="pop-head">
+<h4>Subscribe to our Newsletter</h4>
+<p>To get regular updates about our products and services</p>
+</div>    
+
+<div class="pop-content">
+<form action="newsletter.php" method="post"> 
+<div class="form-group has-feedback">
+
+<div class="col-md-12">
+<label>Name<span>*</span> </label> 
+<input class="from-text" name="fromname" required type="text">
+</div>  
+
+<div class="col-md-12">
+<label>Email Id<span>*</span> </label> 
+<input class="from-text" name="fromemail" type="email" required>
+</div>  
+	
+<div class="col-md-12">   
+<p><label>Verification Code <span>*</span> </label> </p>       	
+<div id="imgdiv4">
+<img id="img4" src="captcha.php" alt="captcha">
+<img id="reload4" src="assets/img/reload.png" alt="reload">	
+</div>
+	
+<div class="col-md-12 no-padding">
+<p><input id="txtCompare" class="from-text" name="captcha" type="text" required></p>
+</div> 
+</div>	
+	
+<div class="col-md-12">
+<div class="pop-check">
+<form action="#"> <label class="cb-con">I agree with the <a href="#" target="_blank">Privacy Policy</a>
+<input type="checkbox">
+<span class="checkmark"></span>
+</label>
+</form> 
+<input class="subscribe" name="submit" value="Subscribe" type="submit">	
+</div>
+</div>
+</div>
+</form>
+	
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 map">
+<h6>Map and Directions</h6>
+<a href="our-centres.html">get directions</a>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!--footer-->
+<footer class="site-footer margin-top">
+<div class="container">
+<div class="row">
+<div class="col-md-12 no-padding">
+<div class="col-md-8">
+<div class="footer-link1">
+<ul>
+<li><a href="FAQ.html">FAQs</a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="disclaimer.html">Disclaimer</a></li>
+<li><a href="press-room.html">Press Room</a></li>
+<li><a href="testimonials.html">Testimonials </a></li>
+</ul>
+</div>
+<div class="footer-link2">
+<ul>
+<li><a href="company.html">About Us</a></li>
+<li><a href="#">Newsletter</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="accreditations.html">Accreditations</a></li>
+<li><a href="#">Recognition and Awards</a></li>
+</ul>
+</div>
+
+</div>
+<div class="col-md-4">
+<ul class="social-links">
+<li><a href="https://instagram.com/infigoeyecare/" target="_blank"><i class="flaticon-instagram"></i></a></li>
+<li><a href="https://business.facebook.com/Infigo-Eyecare-113878843336629/?modal=admin_todo_tour" target="_blank"><i class="flaticon-facebook"></i></a></li>
+<li><a href="https://twitter.com/InfigoE" target="_blank"><i class="flaticon-twitter"></i></a></li>
+<li><a href="#"><i class="flaticon-whatsapp"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UCy4k9GJ9jZuYVsDL0gQIZaw" target="_blank"><i class="flaticon-logo"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="copyrights">
+<div class="copy-l">
+<p>Copyright 2019 Infigo Lifesciences Pvt Ltd</p>
+</div>
+<div class="copy-r">
+<p>Designed by <a href="https://www.galagali.com/" target="_blank">Galagali Multimedia</a></p>
+</div>
+</div>
+</div>
+</footer>	   
+
+<a href="#0" class="cd-top">Top</a>
+
+<!--footer links-->
+<script>
+jQuery(window).load(function(){
+jQuery(".hameid-loader-overlay").fadeOut(1000);
+});
+</script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!--menu js-->
+<script src="assets/js/menu-script.js"></script>	
+<!--back to top js start-->
+<script src="assets/js/modernizr.js"></script> 
+<script src="assets/js/back-to-main.js"></script> 
+<script>
+AOS.init({
+easing: 'ease-in-out-sine'
+});
+</script>
+<!--sticky popup js start-->
+<script src="assets/js/needpopup.min.js" type="text/javascript"></script>
+<script>  
+needPopup.config.custom = {
+'removerPlace': 'outside',
+'closeOnOutside': false,
+onShow: function() {
+console.log('needPopup is shown');
+},
+onHide: function() {
+console.log('needPopup is hidden');
+}
+};
+needPopup.init();
+</script>
+<!--file drag-->	
+<script src="assets/js/filedrag.js"></script>
+<!--captcha script-->
+<script src="assets/js/captcha-script.js" type="text/javascript"></script>
+<script type="text/javascript" src="/autocomplete/autocomplete.js"></script>
+	<!--file drag-->	
+	<script>
+var dropContainer =  document.getElementById('filedrag');
+    dropContainer.ondragover = dropContainer.ondragenter = function(evt) {
+      evt.preventDefault();
+      console.log('dragover');
+    };
+
+dropContainer.ondrop = function(evt) {
+  // pretty simple -- but not for IE :(
+  var fileInput = document.getElementById('upfile');
+  fileInput.files = evt.dataTransfer.files;
+  evt.preventDefault();
+   console.log('dropover');
+};
+</script>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,820 @@
+@font-face{font-family:'MuseoSans-100';src:url('../fonts/MuseoSans-100.woff2') format('woff2'),
+url('../fonts/MuseoSans-100.woff') format('woff');font-weight:normal;font-style:normal;}
+@font-face{font-family:'MuseoSans-100Italic';src:url('../fonts/MuseoSans-100Italic.woff2') format('woff2'),
+url('../fonts/MuseoSans-100Italic.woff') format('woff');font-weight:normal;font-style:normal;}
+@font-face{font-family:'MuseoSans-300';src:url('../fonts/MuseoSans-300.woff2') format('woff2'),
+url('../fonts/MuseoSans-300.woff') format('woff');font-weight:normal;font-style:normal;}
+@font-face{font-family:'MuseoSans-500';src:url('../fonts/MuseoSans-500.woff2') format('woff2'),
+url('../fonts/MuseoSans-500.woff') format('woff');font-weight:normal;font-style:normal;}
+@font-face{font-family:'MuseoSans-700';src:url('../fonts/MuseoSans-700.woff2') format('woff2'),
+url('../fonts/MuseoSans-700.woff') format('woff');font-weight:normal;font-style:normal;}
+@font-face{font-family:'MuseoSans-900';src:url('../fonts/MuseoSans-900.woff2') format('woff2'),
+url('../fonts/MuseoSans-900.woff') format('woff');font-weight:normal;font-style:normal;}
+html{font-family:'MuseoSans-300';}
+body{font-family:'MuseoSans-300';}
+h3,h4,h5{color:#747474;}
+p{font-size:18px;line-height:30px;color:#747474;}
+ul li{color:#747474;font-size:18px;line-height:30px;}
+ol li{color:#747474;font-size:18px;line-height:30px;}
+a:hover{text-decoration:none;color:#000!important;}
+.hameid-loader-overlay{width:100%;height:100%;background:url("../img/preloader.gif") center no-repeat #FFF;z-index:99999;position:fixed;}
+.margin-top{margin-top:60px;}
+.no-left-padding{padding-left:0!important;}
+.no-right-padding{padding-right:0!important;}
+.no-padding{padding:0!important;}
+.logo{float:left;margin:25px 0;width:100%;}
+.main-logo{width:18%;float:left;}
+.main-logo img{width:100%;}
+.nav-menu{width:78%;float:left;}
+.call{line-height:60px;float:right;border-left:1px solid #000;padding:0 0 0 20px;}
+.banner-img{background-image:url("../img/banner.jpg");background-size:100%;width:100%;padding:19% 0;background-repeat:no-repeat;}
+.search-container button{padding:12px 30px;background:#ffc415;border:none;cursor:pointer;margin-left:-4px;}
+.search-container button i{font-size:24px;color:#008798;}
+.search-container input[type="text"]{padding:10px 20px;width:47%;line-height:30px;font-size:25px;border:0;}
+.search-container button:hover{background:#b8e2e8;}
+.banner-info{text-align:center;}
+.banner-info h2{color:#de373e;font-size:50px;font-family:'MuseoSans-500';}
+.sticky-popup a{background:#ffc30d;padding:10px 20px;color:#000;font-size:23px;right:-58px;position:fixed;transform:rotate(-90deg);border-radius:30px 30px 0 0;font-family:'MuseoSans-500';top:400px;z-index:9;}
+.sticky-head{text-align:center;background:#ffc30d;padding:25px;border-radius:60px 0 0 0;}
+.sticky-head h4{color:#fff;margin:0;font-size:25px;font-family:'MuseoSans-500';}
+.sticky-content{float:left;padding:25px;}
+.sticky-mid h3{margin:0;color:#000;}
+.sticky-mid a{color:#00b3d3;font-size:20px;}
+.sticky-mid{margin:0 0 20px 0;}
+.sticky-content p{margin:0;}
+.sticky-content label{color:#000;font-size:17px;}
+.sticky-content input[type="text"]{border:1px solid #dadada;width:100%;border-radius:20px 0;padding:0 10px;}
+.sticky-content input[type="email"]{border:1px solid #dadada;width:100%;border-radius:20px 0;padding:0 10px;}
+.sticky-content textarea{border:1px solid #dadada;width:100%;border-radius:20px 0;}
+.sticky-content input[type="submit"]{background:#00b3d3;border:0;color:#fff;padding:5px 10px;font-size:19px;margin:20px 0;}
+.sticky-content input[type="submit"]:hover{background:#ffc30d;color:#000;}
+.abt{color:#00b3d3;font-size:18px;margin:0;}
+.abt a{color:#00b3d3;font-family:'MuseoSans-500';}
+.search{padding:30px 50px;}
+.search h4{font-size:20px;font-family:'MuseoSans-500';margin:0;color: #1a0dab;}
+.search h4::before {    content: '\f105';    font-family: fontAwesome;    margin: 0 10px 0 0;    color:     #008798;    padding: 2px 7px;    border-radius: 50%;    width: 18px;    height: 18px;
+    display: block;    float: left;    text-align: center;    line-height: 18px;}
+.search h5{margin:10px 0 0 0;}
+.search h5 a{color:#383838;font-size:15px;margin:0 0 10px 0;}
+.s1{margin:0 0 20px 0;border-bottom: 1px solid #e1e1e1; padding: 0 0 10px 0;}
+.banner-btm{text-align:center;margin-top:-85px;color:#fff;font-family:'MuseoSans-500';}
+.banner-btm h3{text-transform:uppercase;margin:0;color:#fff;}
+.banner-btm a{color:#fff;}
+.banner-btm img{margin:0 0 25px 0;}
+.banner-btm p{color:#fff;}
+.find-doctor{background:#008798;padding:25px;border-radius:60px 0 0 0;}
+.centers{padding:25px;background-image:linear-gradient(to right, rgba(243,115,120,1), rgba(233,56,62,1));}
+.book-appointment{background:#008798;padding:25px;border-radius:0 0 60px 0;}
+.center1{width:90%;border:2px solid #bcbec0;float:left;margin:0 5%;height:545px;}
+.yell-color{background:#ffc30d;}
+.blue-color{background:#008798}
+.centers-head{padding:20px 10px;float:left;height:245px;width:100%;}
+.c-img{width:40%;float:left;}
+.c-img img{width:100%;}
+.c-add{width:60%;float:right;text-align:right;}
+.c-add h5{color:#fff;font-size:28px;margin:0 0 20px 0;font-family:'MuseoSans-500';text-transform:uppercase;}
+.c-add h6{color:#000;font-size:17px;margin:0;}
+.centers-content{float:left;padding:15px 10px;height:300px;position:relative;width:100%;}
+.centre-det{float:right;color:#008798;font-size:19px;font-family:'MuseoSans-500';position:absolute;right:0;bottom:20px;}
+.centre-det:after{content:"\f105";font-size:20px;margin:0px 10px 0 0px;color:#008798;margin-left:8px;font-family:'FontAwesome';}
+.heading{text-align:center;color:#000;}
+.heading h3{margin:0 0 40px 0;font-size:40px;text-transform:uppercase;font-family:'MuseoSans-900';color:#000;}
+.heading img{width:20%;margin:0 0 40px 0;}
+.eyego{background:#ed1c24;border-radius:0 120px 0 0;float:left;width:100%;}
+.carousel-inner{width:100%;}
+.glyphicon.glyphicon-menu-left{left:-50px;}
+.glyphicon.glyphicon-menu-right{right:-20px;}
+.eyego-content{width:100%;float:left;}
+.eyego-content img{float:left;width:50%;margin:0 25px 0 0;}
+.eyego-content h3{font-family:'MuseoSans-500';margin:30px 0 20px 0;font-size:35px;color:#fff;}
+.eyego-content a{float:right;color:#fff;font-size:22px;font-family:'MuseoSans-700';margin:20px 0;}
+.eyego-content a:after{content:"\f105";font-size:20px;margin:0px 10px 0 0px;color:#fff;margin-left:8px;font-family:'FontAwesome';}
+.eyego-content p{color:#fff;padding:25px 50px 0 10px;}
+.news{width:80%;float:left;margin:0 10% 2% 10%;box-shadow:5px 8px 0 0px #bcbec0;}
+.news img{width:100%;}
+.news-content{padding:20px 10px;float:right;height:175px;position:relative;}
+.news-content h6{font-size:22px;color:#000;margin:0;}
+.news-det{float:right;color:#008798;font-size:19px;font-family:'MuseoSans-500';position:absolute;right:0;bottom:20px;}
+.news-det:after{content:"\f105";font-family:"FontAwesome";font-size:20px;margin:0px 10px 0 0px;color:#008798;margin-left:8px;}
+.footer-contact{text-align:center;color:#fff;}
+.footer-contact a{color:#fff;}
+.phone{background-image:linear-gradient(to right, rgba(243,115,120,1), rgba(233,56,62,1));padding:25px;border-radius:60px 0 0 0;height:150px;}
+.phone::before{content:"\f095";font-family:"FontAwesome";color:#ee5459;position:absolute;left:20px;font-size:160px;line-height:110px;}
+.newsletter{background-image:linear-gradient(to right, rgb(35, 156, 174), rgb(0, 135, 152));padding:25px;height:150px;}
+.newsletter a{border:2px solid #fff;padding:10px;font-size:18px;text-transform:uppercase;display:inline-block;position:relative;}
+.newsletter a:hover{background:#fff;}
+.newsletter::before{content:"\f003";font-family:"FontAwesome";color:#008798;position:absolute;left:0px;font-size:180px;line-height:90px;}
+.map{background-image:linear-gradient(to right, rgba(243,115,120,1), rgba(233,56,62,1));padding:25px;border-radius:0 0 60px 0;height:150px;}
+.map a{border:2px solid #fff;padding:10px;font-size:18px;text-transform:uppercase;display:inline-block;}
+.map a:hover{background:#fff;}
+.map::before{content:"\f041";font-family:"FontAwesome";color:#f16369;position:absolute;left:10px;font-size:170px;line-height:100px;}
+.footer-contact h6{font-size:22px;margin:0 0 20px 0;position:relative;}
+.phone a{font-size:22px;}
+.pop-head h4{font-size:30px;color:#000;font-family:'MuseoSans-700';}
+.pop-head{text-align:center;}
+.pop-content{width:100%;float:left;}
+.pop-content label{font-size:20px;color:#5e5e5e;}
+.from-text{width:100%;padding:5px 10px;background:#ffffff;margin:0 0 15px 0;border:0;line-height:25px;font-size:20px;}
+.pop-check span{font-size:18px;color:#5e5e5e;}
+.pop-check span a{color:#008798;}
+.subscribe{background:#ffc415;border:0;padding:5px 10px;color:#fff;font-size:20px;float:right;font-family:'MuseoSans-500'}
+.subscribe:hover{background:#008798;}
+.cb-con{position:relative;padding-left:35px;cursor:pointer;font-size:22px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.cb-con input{position:absolute;opacity:0;cursor:pointer;height:0;width:0;}
+.checkmark{position:absolute;top:0;left:0;height:20px;width:20px;background-color:#ece8df;border:1px solid #4f4c4c;}
+.cb-con:hover input ~ .checkmark{}
+.cb-con input:checked ~ .checkmark{background-color:#ECE8DF;border:1px solid #686767;}
+.checkmark:after{content:"";position:absolute;display:none;}
+.cb-con input:checked ~ .checkmark:after{display:block;}
+.cb-con .checkmark:after{left:6px;top:0px;width:6px;height:15px;border:solid #686767;border-width:0 3px 3px 0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);}
+.site-footer{padding:4% 0 0 0;background:#ebebeb;float:left;width:100%;}
+.footer-link1{float:left;margin-left:10%;}
+.footer-link1 ul{margin:0;padding:0;}
+.footer-link1 ul li{display:block;}
+.footer-link1 ul li a{color:#555;font-size:22px;}
+.footer-link2{float:left;margin-left:10%;}
+.footer-link2 ul{margin:0;padding:0;}
+.footer-link2 ul li{display:block;}
+.footer-link2 ul li a{color:#555;font-size:22px;}
+.social-links li{display:inline-block;margin-right:10px;}
+.social-links{margin:53px 0;padding:0;}
+.social-links li a{color:#008798;}
+.copyrights{margin:4% 0 0 0;}
+.copy-r{float:right;}
+.copy-r a{color:#747474;}
+.copy-l{float:left;}
+.main-search{text-align:center;margin:0 0 30px 0;}
+.in-search-container button{padding:12px 30px;background:#ffc415;border:none;cursor:pointer;margin-left:-4px;}
+.in-search-container button i{font-size:24px;color:#008798;}
+.in-search-container input[type="text"]{padding:10px 20px;width:47%;line-height:30px;font-size:25px;border:0;background:#f2f1f1;}
+.in-search-container button:hover{background:#b8e2e8;}
+.breadcrumb{border:0;background:none;text-align:center;text-transform:uppercase;font-family:'MuseoSans-500';}
+.breadcrumb h2{margin:0;font-size:40px;font-family:'MuseoSans-700';}
+.breadcrumb small{color:#000;font-size:25px;font-family:'MuseoSans-500';}
+.breadcrumb img{margin:0 0 20px 0;width:20%;}
+.gray-bg{background:#f8f8f8;}
+.apointment-form{float:left;}
+.apointment-form label{font-size:22px;color:#464646;}
+.apointment-form select{padding:5px 10px;font-size:18px;border:0;width:100%;margin:0 0 20px 0;}
+.input-group{width:100%;}
+.input-group-addon:last-child{border-left:0;padding:0;vertical-align:initial;display:none;}
+.apointment-form input[type="text"]{padding:5px 10px;font-size:18px;border:0;width:100%;margin:0 0 20px 0;}
+.apointment-form input[type="email"]{padding:5px 10px;font-size:18px;border:0;width:100%;margin:0 0 20px 0;}
+.apointment-form input[type="checkbox"]{float:left;width:50%;margin:0;}
+.appointment{font-size:24px;color:#464646;}
+.ch1{float:left;width:18%;font-size:22px;color:#464646;margin:0 70px 20px 0;}
+.submit{background:#ffc415;border:0;padding:10px 20px;color:#464646;font-size:23px;font-family:'MuseoSans-500';margin:0 0 20px 0;}
+.submit:hover{background:#008798;color:#fff;}
+.form-gender{float:right;width:40%;}
+.form-age{width:40%;float:left;}
+.all-centres{text-align:center;font-size:35px;}
+.all-centres img{width:80%;}
+.location h3{font-size:30px;text-transform:uppercase;color:#008798;font-family:'MuseoSans-900';margin:0 0 20px 0;}
+.location h4{font-size:18px;text-transform:uppercase;color:#008798;}
+.location{padding:0 55px 0 0;}
+.loc1{margin:0;padding:0;}
+.loc1 li{display:block;margin:0 0 10px 0;font-size:18px;color:#8f8f8f;}
+.loc1 li i{color:#8f8f8f;width:30px;font-size:22px;}
+.loc1 li a{font-size:18px;color:#747474;}
+.loc2 li a{background:#008798;padding:5px 10px;color:#fff;font-size:16px;text-transform:uppercase;text-align:center;width:40%}
+.loc2{margin:20px 0 0 0;padding:0;}
+.loc2 li{display:flex;margin:0 0 10px 0;}
+.heading-lf{margin:20px 0 20px 0;text-transform:uppercase;color:#008798;font-size:38px;font-family:'MuseoSans-900';}
+.v-tour{background:#ffc416;padding:5px 20px;font-size:22px;text-transform:uppercase;color:#fff;margin:20px 0 0 0;display:inline-block;font-family:'MuseoSans-700'}
+.hr{border:2px solid #e6e6e6;float:left;width:40%;margin:20px 0 0 0;}
+.location-details{background:#f5f5f5;padding:70px;border-radius:60px 0 60px 0;}
+.loc-det li{display:block;margin:0 0 10px 0;}
+.loc-det li i{color:#8f8f8f;width:35px;font-size:26px;}
+.loc-det li a{font-size:22px;color:#8f8f8f;}
+.heading-ct{margin:0 0 20px 0;text-transform:uppercase;color:#008798;font-size:38px;font-family:'MuseoSans-900';text-align:center;}
+.services{background:#fdffd8;padding:15px;box-shadow:5px 5px 0 0px #dfdfdf;}
+.services h4{color:#3b3b3b;text-transform:uppercase;font-family:'MuseoSans-700';margin:0 0 20px 0;font-size:23px;}
+.services ul{margin:0;padding:0 20px;}
+.services ul li{color:#3b3b3b;}
+.ser-hei1{height:440px;}
+.ser-hei2{height:275px;}
+.insurance-logo1 li img{width:65%;}
+.insurance-logo1{padding:0;margin:0;text-align:center;}
+.insurance-logo1 li{display:inline-block;}
+.insurance-logo2 li img{width:65%;}
+.insurance-logo2{padding:0;margin:30px 0;text-align:center;}
+.insurance-logo2 li{display:inline-block;}
+.insurance-logo3 li img{width:65%;}
+.insurance-logo3{padding:0;text-align:center;}
+.insurance-logo3 li{display:inline-block;margin:0 50px 0 0;}
+.doctors1 {text-align:center;box-shadow:5px 5px 0 0px #dfdfdf;padding:25px 5px;height:auto;width:29%;margin:0 2%;}
+.doctors1 h3{color:#606060;font-family:'MuseoSans-700';}
+
+.doctors{text-align:center;box-shadow:5px 5px 0 0px #dfdfdf;padding:25px 5px;height:445px;width:29%;margin:0 2%;}
+.doctors h3{color:#606060;font-family:'MuseoSans-700';}
+.education{margin:25px 0;}
+.education::before{height:2px;display:block;width:300px;background:#bcbdc1;content:'';margin:0 auto 10px auto;}
+.education::after{height:2px;display:block;width:300px;background:#bcbdc1;content:'';margin:0 auto;}
+.doctors h4{font-family:'MuseoSans-500';}
+.doctors li a{background:#008798;padding:5px 10px;color:#fff;font-size:16px;text-transform:uppercase;text-align:center;width:51%;display:inline-block;}
+.doctors ul{margin:25px 0 0 0;padding:0;}
+.doctors li{display:block;margin:0 0 10px 0;}
+.modal-dialog{width:1000px;}
+.modal-content{text-align:left;padding:20px 40px;border-radius:60px 0 60px 0;box-shadow:5px 5px 0 0px #bdbec0;border:0;}
+.modal-header h4{color:#008798;font-size:25px;}
+.modal-header{padding:0;border:0;}
+.modal-header h4::after{height:1px;display:block;width:50%;background:#f6931e;content:'';margin:10px 0;}
+.modal-body{position:relative;padding:0 20px;}
+.modal-body ul li{font-size:16px;line-height:20px;display:flex;}
+.modal-body ul li::before{content:"\2022";font-weight:bold;display:inline-block;margin:0 10px 0 0;font-family:'FontAwesome';}
+.modal-body::after{height:1px;display:block;width:80%;background:#f6931e;content:'';margin:10px 0;}
+.modal-mid h5{color:#e9383e;font-size:20px;margin:0;line-height:27px;}
+.modal-mid::after{height:1px;display:block;width:80%;background:#f6931e;content:'';margin:10px 0;}
+.modal-footer{border:0;text-align:left;padding:0;}
+.modal-footer h6{color:#008798;font-size:20px;}
+.faq{padding:40px 50px;}
+.faq h5{color:#008798;font-size:24px;margin:0 0 10px 0;font-family:'MuseoSans-500';}
+.faq p{margin:0 0 25px 0;}
+.faq ul{padding:0;margin:0;}
+.faq ul li{display:block;}
+.press-room{padding:30px 50px;}
+.press-room h5{margin:30px 0 0 0;}
+.press-room h5 a{color:#383838;font-size:24px;margin:0 0 10px 0;font-family:'MuseoSans-500';}
+.press-room p{margin:0;line-height:30px;}
+.disclaimer{padding:40px 50px;}
+.disclaimer a{color:#747474;}
+.disclaimer h5{font-size:25px;font-family:'MuseoSans-500';}
+.Accreditations{padding:30px 50px;}
+.acc{padding:30px;border-radius:60px 0 60px 0;box-shadow:5px 5px 0 0px #bcbec0;background:#fff;}
+.acc h3{font-family:'MuseoSans-500';}
+.career-banner img{width:100%;}
+.opening h3{text-align:center;font-size:40px;text-transform:uppercase;}
+.opening ul{margin:40px auto;width:25%;padding:0;}
+.opening ul li{font-size:23px;}
+.apply h3{text-align:center;font-size:40px;text-transform:uppercase;}
+.apply-form{background:#fff;float:left;width:100%;padding:50px;border-radius:60px 0 60px 0;margin:40px 0;box-shadow:5px 5px 0 0px #bcbec0;color:#747474;font-size:23px;font-family:'MuseoSans-500';}
+.apply-form p{color:#747474;font-size:23px;font-family:'MuseoSans-500';width:100%;float:left;}
+.apply-form label{color:#747474;font-size:23px;margin:0 10px 0 0;font-family:'MuseoSans-500';}
+.apply-form input[type="text"]{padding:5px 10px;font-size:18px;width:63%;margin:0 0 20px 0;border-bottom:3px dotted #918f8f;border-top:0;border-left:0;border-right:0;}
+.apply-form input[type="email"]{padding:5px 10px;font-size:18px;width:63%;margin:0 0 20px 0;border-bottom:3px dotted #918f8f;border-top:0;border-left:0;border-right:0;}
+.apply-form select{padding:5px 10px;font-size:18px;width:63%;margin:0 0 20px 0;border-bottom:3px dotted #918f8f;border-top:0;border-left:0;border-right:0;background:#f5f5f5;}
+.resume{float:left;}
+.apply-form input[type="file"]{width:auto;float:left;}
+.post{width:50%;float:none;margin:20px auto 20px auto;}
+.apply-form input[type="radio"]{margin:20px 30px 0 10px;;}
+.aply-submit{text-align:center;}
+.aply-submit input[type="submit"]{background:#ffc415;border:0;padding:10px 30px;color:#464646;margin:20px 0 0 0;text-transform:uppercase;}
+.aply-submit input[type="submit"]:hover{background:#008798;color:#fff;}
+.testimonial-main{padding:70px 0;}
+.testimonial{text-align:center;background:#ffeaab;border-bottom:5px solid #bcbec0;border-right:5px solid #bcbec0;}
+.testimonial-text::before{content:"\f10d";font-family:"FontAwesome";font-size:100px;color:#ffd044;left:20px;position:absolute;top:0;}
+.testimonial-text::after{content:"\f10e";font-family:"FontAwesome";font-size:100px;color:#ffd044;right:20px;position:absolute;}
+.testimonial-text{width:80%;float:none;margin:0 auto;padding:50px 0 105px 0;}
+.testimonial-text h3{color:#000;line-height:35px;}
+.testimonial-img{background:#fff;padding:0 0 50px 0;}
+.testimonial-img h4{color:#000;margin:20px 0 0 0;font-size:25px;font-family:'MuseoSans-500';}
+.testimonial-img h4 span{color:#747474;}
+.testimonial-img img{width:15%;margin-top:-100px;}
+.sec-heading1{margin:0 0 25px 0;color:#363636;font-size:35px;font-family:'MuseoSans-700';}
+.sec-heading2{margin:0 0 25px 108px;color:#363636;font-size:40px;font-family:'MuseoSans-700';}
+.sec-heading3{margin:0 0 25px 0;color:#363636;font-size:40px;font-family:'MuseoSans-700';text-align:center;text-transform:uppercase;}
+.company-sec-l{background:#f8f8f8;padding:0 100px 0 0;}
+.company-left-img img{float:left;width:50%;margin:0 50px 0 0;}
+.company-left-img{width:100%;float:left;}
+.img-l::after{height:270px;width:16px;background:#008898;content:'';position:absolute;top:25%;margin-left:-58px;}
+.company-left-img p{font-size:20px;line-height:40px;}
+.text-r{display:block;padding:100px;}
+.company-sec-r{background:#f8f8f8;padding:0 0 0 100px;}
+.company-right-img img{float:right;width:50%;margin:0 0 0 50px;}
+.company-right-img{width:100%;float:left;}
+.img-r::after{height:270px;width:16px;background:#008898;content:'';position:absolute;top:25%;right:46.3%;}
+.company-right-img p{font-size:20px;line-height:40px;}
+.text-l{display:block;padding:100px;}
+.founder-content img{width:50%;margin:0 50px 0 0;float:left;}
+.founder-content h3{font-size:27px;font-family:'MuseoSans-700';}
+.founder-content h4{margin:0 0 25px 0;font-size:22px;}
+.team{margin:0 0 40px 0;float:left;width:100%;}
+.team-img{text-align:center;}
+.team-img img{width:50%;box-shadow:5px 5px 0 0 #ffc415;border-radius:50%;}
+.team-info h3{font-size:27px;font-family:'MuseoSans-700';}
+.team-info h4{margin:0 0 25px 0;font-size:22px;}
+.team-info ul{margin:25px 0;padding:0 15px;}
+.team-members{text-align:center;}
+.team-members img{width:50%;}
+.team-members h5{color:#008798;font-size:25px;margin:20px 0 0 0;}
+.team-members h6{font-size:18px;margin:10px 0;}
+.inner-banner img{width:100%;}
+.eyecare{padding:0;margin:25px 0;text-align:center;}
+.eyecare li{display:inline;color:#008798;font-size:26px;margin:0 25px;font-family:'MuseoSans-700';}
+.red{color:#ff1b23;font-family:'MuseoSans-500';}
+.corporate{width:80%;margin:20px auto;}
+.corporate-in{background:#f5f5f5;float:left;padding:50px 100px;}
+.corporate-in input[type="text"]{padding:5px 10px;font-size:18px;width:100%;border:0;}
+.corporate-in input[type="email"]{padding:5px 10px;font-size:18px;width:100%;border:0;}
+.corporate-in input[type="submit"]{background:#ffc415;border:0;padding:10px 30px;color:#464646;font-size:22px;text-transform:uppercase;margin:20px 0 0 0;}
+.corporate-in input[type="submit"]:hover{background:#008798;color:#fff;}
+.insurance{padding:30px 50px;text-align:center;}
+.insurance h4{font-family:'MuseoSans-700';font-size:25px;margin:0 0 25px 0;}
+.insurance-in{padding:30px;border-radius:60px 0 60px 0;box-shadow:5px 5px 0 0px #bcbec0;background:#fff;}
+.insurance-in1::after{height:1px;display:block;width:30%;background:#008798;content:'';margin:40px auto 60px auto;}
+.insurance-in h5{margin:0 0 20px 0;color:#008798;font-size:40px;font-family:'MuseoSans-700';}
+.international{padding:30px 50px;}
+.facility h4{font-family:'MuseoSans-700';font-size:25px;margin:0 0 25px 0;text-align:center;color:#008798;}
+.facility{padding:30px;border-radius:60px 0 60px 0;box-shadow:5px 5px 0 0px #bcbec0;background:#fff;}
+.second-opinion p{text-align:center;padding:0 100px;}
+.opinion-form input[type="text"]{padding:5px 10px;font-size:18px;width:100%;border:1px solid #ccc;margin:0 0 25px 0;}
+.opinion-form input[type="email"]{padding:5px 10px;font-size:18px;width:100%;border:1px solid #ccc;margin:0 0 25px 0;}
+.opinion-form textarea{border:2px dashed #ccc;padding:5px 10px;font-size:18px;width:100%;}
+.opinion-form h4{font-family:'MuseoSans-700';font-size:25px;margin:0 0 25px 0;color:#000;}
+.opinion-form p{text-align:left;padding:0;}
+.query{text-align:center;}
+.query ul li{display:block;}
+.query ul li::before{content:"\f068";font-weight:bold;display:inline-block;margin:0 10px 0 0;font-family:'FontAwesome';}
+.document h4{font-family:'MuseoSans-700';font-size:22px;margin:0 0 25px 0;color:#000;text-align:left;}
+.document h5{font-size:22px;}
+.document ul{padding:0}
+.document ul li{display:block;}
+.opinion-form input[type="submit"]{background:#008798;border:0;padding:10px 30px;color:#fff;font-size:22px;text-transform:uppercase;margin:25px 0 0 0;}
+.opinion-form input[type="submit"]:hover{background:#ffc415;color:#000;}
+.opinion-form h5{margin:5px 0;font-size:17px;}
+.documents{display:block;}
+#filedrag{display:none;border-radius:7px;cursor:default;text-align:center;border:2px dashed #ccc;padding:25px;font-size:25px;}
+#filedrag input[type="file"]{display:none;}
+#filedrag.hover{color:#f00;border-color:#f00;border-style:solid;box-shadow:inset 0 3px 4px #888;}
+pre{width:95%;height:8em;font-family:monospace;font-size:0.9em;padding:1px 2px;margin:0 0 1em auto;border:1px inset #666;background-color:#eee;overflow:auto;}
+#messages{padding:0 10px;margin:1em 0;border:1px solid #999;}
+#progress p{display:block;width:240px;padding:2px 5px;margin:2px 0;border:1px inset #446;border-radius:5px;background:#eee url("progress.png") 100% 0 repeat-y;}
+#progress p.success{background:#0c0 none 0 0 no-repeat;}
+#progress p.failed{background:#c00 none 0 0 no-repeat;}
+#yourBtn{text-align:center;background-color:#FFC415;cursor:pointer;margin:20px auto 0 auto;color:#fff;padding:5px 10px;width:17%;font-weight:bold;}
+.main-product{background-size:100%;background-repeat:no-repeat;box-shadow:5px 5px 0 0px #dfdfdf;width:48%;margin:0 2% 0 0;}
+.product-men{background-image:url("../img/glasses-for-men.jpg");}
+.product-women{background-image:url("../img/glasses-for-women.jpg");}
+.sunglasses{background-image:url("../img/sunglasses.jpg");}
+.product-kids{background-image:url("../img/glasses-for-kids.jpg");}
+.product-in a{background:#008798;padding:7px 20px;color:#fff;font-size:18px;}
+.product-in a:hover{background:#ed1c24;color:#fff!important;}
+.product-in h3{text-transform:uppercase;color:#000;margin:0 0 25px 0;font-size:27px;}
+.product-in h4{text-transform:uppercase;color:#000;margin:0 0 25px 0;font-size:27px;line-height:63px;}
+.product-in{width:48%;padding:18% 10%;}
+.modal-dialog1{width:900px;}
+.modal-dialog1{position:relative;margin:30px auto;}
+.modal.in .modal-dialog1{-webkit-transform:translate(0, 0);-ms-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0);}
+.modal.fade .modal-dialog1{transition:transform .3s ease-out;}
+.modal-content1{position:relative;background-color:#ffffff;padding:20px 40px;border-radius:15px;box-shadow:0px 0px 5px 5px #9a9a9b;border:0;}
+.modal-content1::before{content:"";position:absolute;top:0;left:0;background-color:transparent;border-style:solid;border-right-width:100px;border-right-color:transparent;border-top-width:100px;border-top-color:#008798;border-bottom-width:0;border-bottom-color:transparent;border-left-width:0;border-left-color:transparent;}
+.modal-content1::after{content:"";position:absolute;bottom:0;right:0;background-color:transparent;border-style:solid;border-left-width:100px;border-left-color:transparent;border-bottom-width:100px;border-bottom-color:#e7383f;border-top-width:0;border-top-color:transparent;border-right-width:0;border-right-color:transparent;}
+.modal-header1 h4{text-align:center;font-size:30px !important;text-transform:uppercase;color:#000;font-family:'MuseoSans-700';}
+.popup-img img{width:100%;box-shadow:5px 5px 0 0 #ccc;}
+.modal-mid1 h3{text-align:center;color:#000;font-size:20px;}
+.modal-body1 h6{font-size:22px;color:#000;}
+.modal-body1{float:left;margin:25px 0;}
+.modal-body1 h3{font-size:22px;color:#000;font-weight:600;}
+.modal-body1 h3::after{height:1px;display:block;width:50px;background:#008798;content:'';margin:5px 0;}
+.modal-footer1{text-align:center;}
+.modal-footer1 a{border:2px solid #e7383f;padding:5px 20px;font-size:18px;color:#000;}
+.modal-footer1 a:hover{background:#69e5f4;}
+.popup-img1 img{width:100%;margin:20px 0;}
+.sec-heading4{margin:0 0 25px 0;color:#363636;font-size:40px;font-family:'MuseoSans-700';text-align:center;text-transform:uppercase;}
+.sec-heading4::before{height:5px;display:block;width:280px;background:#d1cfcf;content:'';margin:0 auto 10px auto;}
+.main-guide{padding:0 100px;}
+.guide{box-shadow:7px 7px 10px 5px #ccc;margin:0 3% 1% 0;padding:0;width:47%;}
+.guide-img img{width:100%;}
+.guidelink{background:#008798;padding:7px 20px;color:#fff;font-size:18px;margin-top:-70px;position:absolute;}
+.guidelink:hover{background:#ed1c24;color:#fff!important;}
+.guide h4{text-align:center;padding:10px 0;margin:0;font-size:23px;}
+.guide h4 a{color:#000;}
+.guide1{box-shadow:7px 7px 10px 5px #ccc;margin:0 auto;padding:0;width:47%;float:none;}
+.guide1 h4{text-align:center;padding:10px 0;margin:0;font-size:23px;}
+.guide1 h4 a{color:#000;}
+.modal-mid2{text-align:center;}
+.modal-mid2 img{width:70%;}
+.list-right h5{font-size:18px;color:#000;}
+.list-right{width:50%;float:right;}
+.list-left h5{font-size:18px;color:#000;}
+.list-left{width:50%;float:right;}
+.row-padding{padding:40px 0;}
+.breadcrumb1{border:0;background:none;text-align:center;font-family:'MuseoSans-500';padding:8px 15px;margin-bottom:20px;}
+.breadcrumb1 h2{margin:0;font-size:40px;font-family:'MuseoSans-700';}
+.breadcrumb1 small{color:#000;font-size:25px;font-family:'MuseoSans-500';}
+.sp-head{color:#000;font-size:30px;text-align:center;}
+.specialist{background:#fff;padding:30px 15px;margin:0 23px 30px 0;box-shadow:5px 5px 0 0 #dfdfdf;width:23%;text-align:center;height:380px;}
+.specialist h4{margin:0;font-family:'MuseoSans-700';font-size:22px;}
+.abt-sp{margin:30px 0;}
+.abt-sp:before{height:1px;display:block;width:100px;background:#bcbec0;content:'';margin:0 auto 10px auto;}
+.abt-sp:after{height:1px;display:block;width:100px;background:#bcbec0;content:'';margin:10px auto 0 auto;}
+.abt-sp p{margin:0 0 10px 0;line-height:25px;}
+.specialist h5{font-size:17px;margin:10px 0 0 0;}
+.specialist ul{margin:25px 0 0 0;padding:0;}
+.specialist li{display:inline-block;margin:0 0 10px 0;}
+.specialist li a{background:#008798;padding:5px 10px;color:#fff;font-size:16px;text-align:center;display:inline-block;}
+.specialist li a:hover{background:#ea3d43;color:#fff!important;}
+.cataract-img{padding:0;margin:25px 0 0 0;}
+.cataract-img li{display:inline-block;margin:0 25px 0 0;width:19%;text-align:center;}
+.cataract-img li img{width:100%;}
+.cataract-img li h6{color:#000;font-size:18px;}
+.Glaucoma p{margin:50px 0;}
+.Glaucoma img{float:right;width:20%;margin:0 0 25px 25px;}
+.single-img{width:50%;}
+.sub-title{margin:20px 0 10px 0;color:#363636;font-size:26px;}
+.trabeculectomy{margin:25PX 0;float:left;}
+.trabeculectomy img{float:right;margin:0 0 25px 25px;width:30%;}
+.surgery{margin:0 0 25px 0;float:left;}
+.surgery img{float:right;margin:0 0 25px 25px;width:30%;}
+.Cornea-main img{width:30%;margin:0 0 25px 0;}
+.Cornea-main{text-align:center;}
+.sec-heading5{margin:25px 0 10px 0;color:#363636;font-size:35px;}
+.Corneal img{width:25%;float:left;margin:0 50px 25px 0;}
+.Corneal{float:left;}
+.computer{float:right;width:30%;}
+.lasik{float:right;margin:0 0 25px 25px;}
+.ptosis{float:right;margin:0 0 25px 25px;}
+.retina{float:left;margin:0 90px 25px 0;width:20%;}
+.pediatric{float:right;width:35%;margin:0 0 25px 25px;}
+.squint{float:left;margin:0 25px 0 0;}
+.Amblyopia{float:left;margin:0 25px 25px 0;}
+#imgdiv{margin:0 0 5px 0;}
+#imgdiv1{margin:0 0 10px 0;}
+#imgdiv2{float:left;width:100%;}
+#img1{float:left;}
+#img2{float:left;}
+#img3{float:left;}
+#img4{float:left;}
+#img5{float:left;}
+#imgdiv3{margin:0 0 10px 0;}
+#imgdiv5{margin:0 0 10px 0;}
+#imgdiv4{margin:0 0 10px 0;}
+.glyphicon{top:50%;font-size:50px;}
+.caprow{float:left;width:100%;}
+.off-div {display:block;}
+.mu-error-area p {    font-size: 22px;}
+.mu-error-area h2 {    font-size: 200px;  }
+.mu-post-btn {    background-color: #03899a;border: 1px solid #ccc;display: inline-block;font-size: 16px;padding: 10px 18px;-webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;
+-o-transition: all 0.5s;transition: all 0.5s;color:    #fff;}
+.mu-error-area {    display: block;    text-align: center;}
+.mu-error-area span {    font-size: 15px;}
+.covid {
+    position: absolute;
+    background: #ffca29;
+    padding: 10px;
+    font-size: 25px;
+}
+.arogya {text-align: center;}
+.account img {
+    width: 18%;
+    margin: 0 12%;
+}
+@media (min-width:1680px){}
+@media (min-width:1681px) and (max-width:1920px){}
+@media (min-width:1450px){.container{width:1400px;}
+}
+@media (min-width:1367px) and (max-width:1440px){.nav-menu{width:80%;}
+.main-logo{width:16%;}
+.call{padding:0 0 0 15px;}
+.center1{height:500px;}
+.centers-content{height:260px;}
+.eyego-content a{margin:5px 0;}
+.loc-det li a{font-size:20px;}
+.sec-heading2{margin:0 0 25px 47px;}
+}
+@media (min-width:1281px) and (max-width:1366px){.nav-menu{width:79%;}
+.main-logo{width:17%;}
+.call{padding:0 0 0 10px;}
+.glyphicon.glyphicon-menu-right{right:-11px;}
+.glyphicon.glyphicon-menu-left{left:-37px;}
+.sec-heading2{margin:0 0 25px 45px;}
+.ser-hei1{height:450px;}
+.product-in{padding:18% 9%;}
+.product-in h4{line-height:59px;}
+.eyego-content p{line-height:25px;padding:25px 60px 0 10px;}
+}
+@media (min-width:1025px) and (max-width:1280px){.container {    width: 92%;}
+.main-logo{width:20%;float:none;margin:0 auto 10px auto;}
+.nav-menu{width:94%;}
+.opening ul{width:30%;}
+.loc2 li a{width:45%}
+.product-in{width:52%;padding:17% 10%;}
+.sec-heading2{margin:0 0 25px 48px;}
+.company-sec-l{padding:0 50px 0 0;}
+.text-r{padding:40px;}
+.company-sec-r{padding:0 0 0 50px;}
+.text-l{padding:40px;}
+.img-r::after{right:47.3%;}
+.ser-hei1{height:455px;}
+.doctors li a {    width: 55%;}
+.doctors {height: 460px;}
+.specialist li a {padding: 0px 10px;}
+.product-in h4 {line-height: 59px;}
+}
+@media (max-width:1024px){.container{width:94%;}
+.main-logo{width:22%;float:none;margin:0 auto;}
+.nav-menu{width:94%;}
+.glyphicon{font-size:35px;}
+.glyphicon.glyphicon-menu-left{left:-20px;}
+.glyphicon.glyphicon-menu-right{right:-10px;}
+.newsletter a{position:relative;}
+.map a{position:relative;}
+.find-doctor{width:33%;float:left;height:100%}
+.centers{width:34%;float:left;height:100%}
+.book-appointment{width:33%;float:left;height:100%}
+.banner-btm{float:left;height:245px;}
+.sticky-popup a{font-size:20px;padding:5px 20px;right:-54px;top:250px;}
+.sticky-content{padding:15px;}
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{margin-right:0;}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{margin-left:0;}
+.eyego-content{padding-bottom:25px;}
+.center1{margin:0 5%;width:auto;height:580px;}
+.centers-content{height:345px;}
+.news{width:90%;margin:0 5% 5% 5%;}
+.apply-form{padding:50px 5px;}
+.location{padding:0 30px 0 0;}
+.loc2 li a{padding:5px 10px;width:60%;}
+.location-details{padding:50px 30px;}
+.loc-det{padding:0;}
+.loc-det li i{width:30px;font-size:20px;}
+.loc-det li a{font-size:18px;}
+.ser-hei1{height:545px;}
+.ser-hei2{height:325px;}
+.insurance-logo1 li{display:table-cell;}
+.insurance-logo3 li{margin:0;}
+.sec-heading2{margin:0 0 25px 42px;}
+.doctors h3{font-size:22px;}
+.doctors li a{width:70%;padding: 0px 10px;}
+.abt-sp p {    margin: 0;    line-height: 22px;}
+.education::before{width:100px;}
+.education::after{width:100px;}
+.modal-dialog1{width:90%;}
+.cataract-img li{width:23%;}
+.Glaucoma img{width:35%;}
+.retina{width:25%;}
+.main-product{width:48%;float:left;}
+.product-in{padding:15% 2%;}
+.product-in h4{line-height:23px;font-size: 21px;}
+.product-in h3{font-size:21px;}
+.opening ul{width:32%;}
+.apply-form label{margin:0 5px 0 0;font-size: 19px;}
+.apply-form p {font-size: 19px;}
+.apply-form input[type="text"] {width:58%;}
+.img-l::after{top:12%;}
+.text-r{padding:50px;}
+.img-r::after{top:12%;right:49%;}
+.text-l{padding:50px;}
+.founder-text{padding:20px 50px}
+.founder-text h3{margin:0;}
+.testimonial-text::before{font-size:70px;}
+.testimonial-text::after{font-size:70px;}
+.off-div {display:none;}
+.specialist {width: 30%;}
+#yourBtn {width: 20%;}
+.company-sec-r {padding: 0 0 0 0;}
+.company-sec-l  {padding: 0 0 0 0;}
+.acc h3 {font-size:20px;}
+.appointment {    font-size: 22px;}
+.company-left-img p {    font-size: 18px;    line-height: 30px;}
+.company-right-img p {    font-size: 18px;    line-height: 30px;}
+
+}
+@media (max-width:800px){.container {    width: 92%;}
+    
+}
+@media (max-width:768px){.container{width:85%;}
+.nav-menu{width:90%;}
+.main-logo{width:100%;text-align:center;}
+.main-logo img{width:auto;}
+.eyego-img{width:100%;}
+.eyego-content{width:100%;}
+.carousel-control .glyphicon-chevron-right{margin-right:0;font-size:25px;color:#000;}
+.carousel-control .glyphicon-chevron-left{margin-right:0;font-size:25px;color:#000;}
+.footer-link1{margin-left:5%;}
+.footer-link2{margin-left:5%;}
+.social-links{margin:60px 0;float:left;}
+.center1{width:85%;margin:0 7.5%;}
+.news{width:80%;float:left;margin:10px 30px;}
+.in-search-container input[type="text"]{width:70%;}
+.flaticon-twitter::before{font-size:35px;vertical-align:bottom;}
+.sticky-popup a{font-size:20px;padding:5px 10px;right:-44px;}
+.banner-btm{height:265px;}
+.center1{height:580px;}
+.centers-content{height:345px}
+.doctors{width:47%;margin:0 3% 40px 0;float:left;}
+.modal-dialog{width:90%;}
+.breadcrumb img{width:35%;}
+.location{padding:0 50px 0 20px;width:50%;float:left;margin:25px 0 0 0;}
+.loc2 li a{width:60%;padding:5px;}
+.ser-hei1{height:auto;}
+.ser-hei2{height:auto;}
+.services{margin:0 0 25px 0;}
+.location-details{padding:50px;}
+.loc-det{padding:0;}
+.loc-det li{display:inline;}
+.opening ul{width:45%;}
+.post{width:60%;text-align:center;}
+.apply-form select{width:100%;}
+.testimonial-text::before{font-size:70px;}
+.testimonial-text::after{font-size:70px;}
+.testimonial-img img{width:25%;}
+.testimonial-text h3{font-size:20px;}
+.sec-heading2{margin:0 0 25px 35px;}
+.company-text{padding:15px;}
+.founder-text{padding:0;}
+.company-sec-l{float:left;padding:0;}
+.company-sec-r{float:left;padding:0;}
+.img-l::after{height:200px;}
+.img-r::after{height:200px;right:49%;}
+.team-img{float:left;}
+.team-members{float:left;width:50%;}
+.apply-form select{width:70%;}
+.corporate-in{width:100%;}
+.specialist{width:47%;margin:0 16px 25px 0;float:left;}
+.sp-head{margin:0 0 25px 0;}
+.cataract-img li{width:28%;}
+.main-product{margin:20px auto;width:60%;float:none;}
+.product-in{padding:13% 2%;}
+.product-in h4{font-size:21px;margin:0 0 9px 0;}
+.product-in h3{font-size:21px;}
+.main-guide{padding:0 50px;}
+.guide{margin:0 3% 7% 0;float:left;}
+.guide h4{font-size:19px;}
+.guide1{float:left;}
+.col-md-4.popup-img{width:33%;float:left;}
+.modal-mid1 h3{height:40px;}
+.second-opinion p{padding:0;}
+#yourBtn{width:25%;}
+.insurance{padding:30px 0;}
+.insurance-logo1 li img{width:30%;}
+.insurance-logo1 li{display:inline;}
+.insurance-logo2 li img{width:30%;}
+.insurance-logo2 li{display:inline;}
+.insurance-logo3 li img{width:25%;}
+.insurance-logo3 li{display:inline;}
+.appointment{font-size:20px;}
+.glyphicon.glyphicon-menu-right{right:14px;}
+.glyphicon.glyphicon-menu-left{left:-6px;}
+}
+@media (max-width:640px){.documents{display:none;}
+}
+@media (max-width:480px){.sticky-head {padding: 15px;}
+.sticky-head h4 {font-size: 20px;}
+ul li{line-height:22px;font-size:16px;}
+p{font-size:16px;line-height:22px;}
+.row-padding{padding:20px 0;}
+.margin-top{margin-top:40px;}
+.banner-img{padding:45% 0 30% 0;}
+.banner-info{background:#ccc;padding:10px 0;}
+.banner-info h2{font-size:30px;margin:0 0 20px 0;}
+.center1{height:500px;}
+.centers-content{height:265px;}
+.search-container input[type="text"]{padding:5px 20px;line-height:15px;font-size:17px;}
+.search-container button i{font-size:17px;}
+.search-container button{padding:5px 30px;}
+.news-content h6{font-size:20px;}
+.banner-btm{height:auto;}
+.find-doctor{width:100%;padding:10px;}
+.centers{width:100%;padding:10px;}
+.book-appointment{width:100%;padding:10px;}
+.eyego-content img{width:100%;margin:0 0 15px 0;}
+.heading img{width:50%;}
+.eyego-content p{padding:0 15px;}
+.eyego-content h3{text-align:center;float:left;width:100%;margin:20px 0;font-size:28px;}
+.footer-link1 ul li a{font-size:20px;}
+.footer-link2{margin-left:0;width:100%;}
+.footer-link1{margin-left:0;width:100%;}
+.footer-link2 ul li a{font-size:20px;}
+.social-links{margin:20px 0;}
+.map{height:auto;padding:15px;}
+.map::before{font-size:113px;top:10px;}
+.newsletter{height:auto;padding:15px;}
+.newsletter::before{font-size:120px;}
+.phone{height:auto;padding:15px;}
+.phone::before{font-size:120px;}
+.heading h3{margin:0 0 20px 0;font-size:30px;}
+.all-centres img{width:100%;}
+.location{padding:0;width:100%;}
+.location-details{padding:25px;margin:20px 0 0 0;}
+.loc-det li{display:block;}
+.heading-lf{font-size:30px;}
+.hr{width:80%;}
+.v-tour{padding:5px 20px;font-size:18px;}
+.specialist{width:100%;margin:0 0 20px 0;}
+.sec-heading5{font-size:28px;}
+.computer{width:100%;}
+.cataract-img li{width:100%;}
+.cataract-img li img{width:auto;}
+.Glaucoma img{width:100%;}
+.trabeculectomy img{width:100%;}
+.surgery img{width:100%;}
+.pediatric{width:100%;}
+.retina{width:100%;}
+.ptosis{width:100%;}
+.Cornea-main img{width:100%;}
+.Corneal img{width:80%;}
+.img-l{position:relative;float:left;}
+.img-l::after{top:69%;margin-left:0;transform:rotate(90deg);left:50%;}
+.company-left-img img{width:100%;}
+.text-r{padding:0 15px;}
+.img-r{position:relative;float:left;}
+.img-r::after{top:69%;margin-left:0;transform:rotate(90deg);left:50%;}
+.company-right-img img{width:100%;}
+.text-l{padding:0 15px;}
+.founder-content img{width:100%;}
+.founder-content h3{text-align:center;}
+.founder-content h4{text-align:center;}
+.doctors{width:100%;margin:2% 0;height:auto;}
+.corporate{width:100%;margin:20px auto;float:left;}
+.corporate-in{padding:10px;}
+.breadcrumb1 h2{font-size:30px;}
+.breadcrumb h2{font-size:30px;}
+.breadcrumb img{width:50%;}
+.main-product{width:100%;}
+.guide{width:100%;}
+.guide1{width:100%;}
+.insurance-logo1 li img{width:80%;}
+.insurance-logo1 li{display:inline-block;}
+.insurance-logo2 li img{width:80%;}
+.insurance-logo2 li{display:inline-block;}
+.insurance-logo3 li img{width:80%;}
+.insurance-logo3 li{display:inline-block;}
+.modal-content1{padding:20px;}
+.modal-footer1 a{z-index:9;position:relative;padding:5px 10px;}
+.modal-content1::before{border-top-width:50px;border-right-width:50px;}
+.modal-content1::after{border-left-width:50px;border-bottom-width:50px;}
+.text-r{margin:30px 0 0 0;float:left;}
+.text-l{margin:30px 0 0 0;float:left;}
+.company-left-img p{font-size:16px;line-height:22px;}
+.company-right-img p{font-size:16px;line-height:22px;}
+#yourBtn{width:auto;}
+.opening h3{font-size:30px;}
+.opening ul{width:83%;}
+.apply h3{font-size:30px;}
+.apply-form input[type="text"]{width:100%;}
+.apply-form select{width:100%;}
+.apply-form input[type="email"]{width:100%;}
+.post{width:100%;text-align:left;}
+.ch1{width:100%;}
+.form-age{width:100%;}
+.form-gender{width:100%;}
+.submit{float:left;}
+.apointment-form label{float:left;font-size:18px;}
+.faq{padding:40px 15px;}
+.press-room h5 a{font-size:19px;}
+.press-room{padding:40px 15px;}
+.disclaimer{padding:40px 15px;}
+.acc h3 {font-size: 19px;}
+.Accreditations {padding:40px 15px;}
+.sec-heading3{font-size:30px;}
+.sec-heading4{font-size:30px;}
+.testimonial-text h3{font-size:18px;line-height:25px;}
+.opening h3{font-size:22px;}
+.opening ul li{font-size:19px;}
+.opening ul{margin:0 auto;}
+.apply h3{font-size:22px;}
+.apply-form label{font-size:19px;}
+.apply-form p{font-size:19px;}
+.aply-submit{float:left;}
+.aply-submit input[type="submit"]{font-size:15px;padding:5px 20px;}
+.nav-menu{width:77%;}
+.eyecare li{display:block;line-height:28px;}
+.glyphicon.glyphicon-menu-right{right:25px;}
+.glyphicon.glyphicon-menu-left{left:-7px;}
+.copy-r{float:none;text-align:center;}
+.copy-l{float:none;text-align:center;}
+.footer-contact h6{margin:0;}
+.phone a{margin:5px 0;display:block;}
+.newsletter a{margin:15px 0 0 0;}
+.map a{margin:15px 0 0 0;}
+}
+@media (max-width:414px){}
+@media (max-width:384px){}
+@media (max-width:375px){.container {    width: 82%;}
+.banner-btm img{width:15%;}
+.img-l::after{top:64%;}
+.img-r::after{top:64%;}
+.main-logo img{width:62%;}
+.in-search-container input[type="text"]{padding:5px 20px;font-size:20px;}
+.in-search-container button{padding:10px 30px;}
+.in-search-container button i{font-size:17px;}
+.product-in{width:55%;padding:12% 2%;}
+.main-guide{padding:0 15px;}
+}
+@media (max-width:360px){.container {    width: 83%;}
+.center1{height:560px;}
+.centers-content{height:300px;}
+.centre-det{bottom:0;}
+.modal-content{padding:40px 20px;}
+.modal-body{padding:0;}
+.apply-form input[type="file"]{font-size:15px;}
+.apply-form p{font-size:16px;line-height:23px;}
+}
+@media (max-width:320px){.container{width:80%;}
+p{font-size:16px;line-height:23px;}
+.nav-menu{width:70%;}
+.banner-info h2{font-size:25px;}
+.search-container button{padding:5px 30px;}
+.banner-btm img{width:20%;}
+.heading h3{font-size:30px;}
+.centers-content{height:300px;}
+.center1{height:560px;}
+.footer-link1{margin-left:0;}
+.footer-link2{margin-left:0;}
+.product-in{padding:8% 2%;width:62%;}
+.nav-menu{width:74%;}
+.img-l::after{top:57%;}
+.img-r::after{top:57%;}
+.sec-heading2{margin:10px 0;text-align:center;font-size:30px;}
+}
+@media (max-width:280px){}
